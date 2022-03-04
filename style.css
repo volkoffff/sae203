@@ -550,7 +550,7 @@ footer{
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     height: 20rem;
     padding-left: 2rem;
-    border-radius: 20px;
+    border-radius: 3px;
 }
 .ma5 {
     display: flex;
@@ -560,16 +560,34 @@ footer{
 .arnaque {
     height: 20rem;
 }
-.care {
-    width: 80%;
-    height: 2.7rem;
-    border-radius: 15px;
-    padding-left: 1rem;
-}
 .envoyer {
+    margin-top: 1rem;
+    text-align: center;
     width: 30%;
+    height: 2.7rem;
+    letter-spacing: 1px;
+    color: black;
+    text-transform: uppercase;
+    background-color: var(--white);
+    font-weight: 400;
+    border: 2px solid var(--white);
+    font-size: 1.2rem;
+    transition: 0.12s ease-in-out;
+    border-radius: 3px;
+    color: white    ;
+}
+.envoyer:hover {
+    background-color: white;
+    color: var(--white);
 
 }
+.care {
+    width: 90%;
+    height: 2.7rem;
+    padding-left: 1rem;
+    border-radius: 3px;
+}
+
 .qform {
     font-size: 1.4rem;
     padding-left: 0.5rem;
@@ -662,6 +680,9 @@ form {
     background-size: 130%;
     background-position-x: 100vw;
     z-index: 40;
+}
+.ma4 {
+    width: 80vw;
 }
 }
 

@@ -46,7 +46,6 @@
 ?>
 
 <div class="arnaque"></div>
-kfjjujduzj
         <!-- <div class="carte">
             <div class="g1">
                 <h4 id="titre_produit">AT-AT</h4>
