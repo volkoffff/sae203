@@ -1,31 +1,46 @@
 <?php
     require 'requiere/header.php';
-    // require 'requiere/navbar.php';
+    require 'requiere/navbar.php';
 ?>
-    <div class="ma3">
-        <form action="form_recherche.php" data-parsley-validate>
-        <p>
-            <label  for="duree_mini">prix minimum en euro</label>
-            <input type="text" placeholder="50" list="prix" autocomplete="off" id="duree_mini" name="duree_mini" data-parsley-type="number">
-        </p> 
-        <p>
-            <label for="submit"></label>
-        <input class="favorite styled" type="submit" value="euhhh">
-        </p>
-        <div class="slidecontainer">
-  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-</div>
-        <datalist id="prix">
-            <option value="Allen">
-            <option value="Donner">
-            <option value="Kubrick">
-            <option value="Nolan">
-            <option value="Tarantino">
-            <option value="Tessari">
-        </datalist>
+<div class="img_hero">
+    <div class="ma4">
+        <form action="form_recherche.php" class="ma5" method="GET" data-parsley-validate>
+            <label class="qform" for="saga">Choisissez une cathégorie:</label>
+                <select type="text" class="care" autocomplete="off" id="saga" name="saga">
+                    <option value="<8">tous</option>
+                    <option value="Star Wars">Star Wars</option>
+                    <option value="Brickhead">Brickhead</option>
+                    <option value="Ideas">Ideas</option>
+                    <option value="Creator">Creator</option>
+                    <option value="Architecture">Architecture</option>
+                    <option value="Technic">Technic</option>
+                </select>
+        <form action="form_recherche.php" method="GET" data-parsley-validate>
+            <label class="qform" for="age">Age:</label>
+                <select type="text" class="care" list="age" autocomplete="off" id="age" name="age">
+                    <option value="<8">tous</option>
+                    <option value="<8">moins de 8 ans</option>
+                    <option value="<10">moins de 10 ans</option>
+                    <option value="<12">moins de 12 ans</option>
+                    <option value="<16">moins de 16 ans</option>
+                    <option value="<18">moins de 18 ans</option>
+                    <option value="<18">plus de 18 ans</option>
+                </select>
+        <form action="form_recherche.php" method="GET" data-parsley-validate>
+            <label class="qform" for="age">Nombre de pièces:</label>
+                <select class="care" type="text" list="age" autocomplete="off" id="age" name="age">
+                    <option value="<8">tous</option>
+                    <option value="<8">entre 0 et 500 pièces</option>
+                    <option value="<10">entre 500 et 1000 pièces</option>
+                    <option value="<12">entre 1000 et 2000 pièces</option>
+                    <option value="<16">entre 2000 et 400 pièces</option>
+                    <option value="<18">plus de 4000 pièces</option>
+                </select>
+                <input type="submit" class="envoyer" value="chercher">
+        </form>        
     </div>
-    <h1>enjebflenb skfnb fnsbfsj</h1>
+</div>
 <?php
-    // require 'requiere/footer.php';
+    require 'requiere/footer.php';
     require 'requiere/fin.php';
 ?>

@@ -12,7 +12,7 @@
         </div>
     </div>
      <div class="btn_div">
-        <a class="btn_see" href="listing.php">catalogueefjjjjjjjjj</a>
+        <a class="btn_see" href="listing.php">catalogue</a>
         <a class="btn_see btn_see2" href="listing.php">rechercher</a>
     </div>
 </div>
