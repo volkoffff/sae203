@@ -34,7 +34,7 @@
 	
 	        if(is_uploaded_file($_FILES["nouvelleimage"]["tmp_name"])) {
 	            if(!move_uploaded_file($_FILES["nouvelleimage"]["tmp_name"], 
-	            "../images/".$nouvelleimage)) {
+	            "../images/uploads/".$nouvelleImage)) {
 	                echo '<p>Problème avec la sauvegarde de l\'image, désolé...</p>'."\n";
 	                die();
 	            }
