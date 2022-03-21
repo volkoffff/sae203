@@ -4,7 +4,7 @@
     require 'lib_crud.inc.php';
    
     $co=connexionBD(); 
-    afficherCatalogue($co);   
+    afficherList($co);   
     deconnexionBD($co);
 ?>
 
