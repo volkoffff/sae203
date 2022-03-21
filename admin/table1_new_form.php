@@ -28,6 +28,7 @@
                     echo '<option value="'.$value['_sg_id'].'"> "'.$value['lg_age'].'"</option>';
                 }
                 ?>
+                </select>
 	        <?php
 	            require '../lib_crud.inc.php';
 	            $co=connexionBD();
