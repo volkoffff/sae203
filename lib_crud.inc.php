@@ -125,5 +125,4 @@ echo '</table>'."\n";
     // on se déconnexte en mettant la variable de connexion à null 
     $mabd=null;
 }
-      // affichage du catalogue des albums
-      function afficherListe($mabd) {
+
