@@ -1,9 +1,7 @@
 <?php
     require 'requiere/header.php';
     require 'requiere/navbar.php';
-    require 'secretxyz123.inc.php';
     require 'lib_crud.inc.php';
-
     $mabd=connexionBD();
     $req = "SELECT * FROM table_lego INNER JOIN table_saga ON table_lego._sg_id = table_saga.sg_id";
     $resultat = $mabd->query($req);
