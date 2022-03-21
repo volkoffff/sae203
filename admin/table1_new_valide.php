@@ -16,12 +16,12 @@
 	        $pieces=$_POST['pieces'];
             $genre=$_POST['genre'];
             $age=$_POST['age'];
-	        $nouvelleimage=$_POST['nouvelleimage'];
+
             $legosaga=$_POST['legosaga'];
 	        var_dump($_POST);
 	        var_dump($_FILES);
 	
-	        $imageType=$_FILES["photo"]["type"];
+	        $imageType=$_FILES["nouvelleimage"]["type"];
 	        if ( ($imageType != "image/png") &&
 	            ($imageType != "image/jpg") &&
 	            ($imageType != "image/jpeg") ) {
@@ -30,11 +30,11 @@
 	                die();
 	        }
 	
-	        $nouvelleImage = date("Y_m_d_H_i_s")."---".$_FILES["photo"]["name"];
+	        $nouvelleImage = date("Y_m_d_H_i_s")."---".$_FILES["nouvelleimage"]["name"];
 	
-	        if(is_uploaded_file($_FILES["photo"]["tmp_name"])) {
-	            if(!move_uploaded_file($_FILES["photo"]["tmp_name"], 
-	            "../images/uploads/".$nouvelleImage)) {
+	        if(is_uploaded_file($_FILES["nouvelleimage"]["tmp_name"])) {
+	            if(!move_uploaded_file($_FILES["nouvelleimage"]["tmp_name"], 
+	            "../images/uploads/".$nouvelleimage)) {
 	                echo '<p>Problème avec la sauvegarde de l\'image, désolé...</p>'."\n";
 	                die();
 	            }
