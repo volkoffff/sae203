@@ -19,7 +19,6 @@
             </select>
 	        âge : <input name="age" required><br />
 	        Photo :                 <input type="file" name="nouvelleImage" />
-                                    <input class="btnenvoie" type="submit" value="Ajouter" />
 	        lego saga : <select name="lego_saga">
                 <?php  
                 $co=connexionBD(); 
