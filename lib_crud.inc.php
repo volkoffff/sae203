@@ -126,4 +126,4 @@ function afficherListe($mabd) {
         echo '</tbody>'."\n";
         echo '</table>'."\n";
 
-}
+};
