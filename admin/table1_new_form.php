@@ -22,11 +22,7 @@
 	        lego saga : <select name="lego_saga">
                 <?php  
                 $co=connexionBD(); 
-                $req = "SELECT * FROM  table_lego ";
-                $resultat = $mabd->query($req);
-                foreach ($resultat as $value) {
-                    echo '<option value="'.$value['_sg_id'].'"> "'.$value['lg_age'].'"</option>';
-                }
+                afficherAuteursOptions($co);
                 ?>
                 </select>
                 
