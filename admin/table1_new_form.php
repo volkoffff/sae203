@@ -18,8 +18,8 @@
             <option value="fille">fille</option>
             </select>
 	        âge : <input type="number" name="age" required><br />
-	        Photo : <input type="file" name="nouvelleImage" required> <br/>
-	        logo de la licence lego : <select name="lego_saga">        
+	        Photo : <input type="file" name="nouvelleimage" required> <br/>
+	        logo de la licence lego : <select name="legosaga">        
 	        <?php
 	            require '../lib_crud.inc.php';
 	            $co=connexionBD();

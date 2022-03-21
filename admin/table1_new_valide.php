@@ -14,10 +14,11 @@
 	        $nom=$_POST['nom'];
 	        $prix=$_POST['prix'];
 	        $pieces=$_POST['pieces'];
-	        $nouvelleImage=$_POST['nouvelleImage'];
             $genre=$_POST['genre'];
             $age=$_POST['age'];
 	        $auteur=$_POST['auteur'];
+	        $nouvelleimage=$_POST['nouvelleImage'];
+            $legosaga=$_POST['legosaga'];
 	        var_dump($_POST);
 	        var_dump($_FILES);
 	
