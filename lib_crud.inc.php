@@ -38,7 +38,8 @@
     // on se déconnexte en mettant la variable de connexion à null 
     $mabd=null;
   }
-      // affichage du catalogue des albums
+
+  // affichage du catalogue des albums
       function afficherCatalogue($mabd) {
         $req = "SELECT * FROM table_lego 
                 INNER JOIN table_saga ON table_lego._sg_id = table_saga.sg_id";
@@ -91,39 +92,38 @@
 
 //afficher liste pour gérer la bdd
 function afficherListe($mabd) {
+    $req = "SELECT * FROM table_lego 
+    INNER JOIN table_saga ON table_lego._sg_id = table_saga.sg_id";
+try {
+$resultat = $mabd->query($req);
+} catch (PDOException $e) {
+// s'il y a une erreur, on l'affiche
+echo '<p>Erreur : ' . $e->getMessage() . '</p>';
+die();
+}
+foreach ($resultat as $value) {
+echo '<table>'."\n";
+echo '<thead><tr><th>Photo</th><th>Nom lego</th><th>Prix (&euro;)</th><th>Pieces</th><th>Genre</th><th>Modifier</th><th>Supprimer</th><th>age</th></tr></thead>'."\n";
+echo '<tbody>'."\n";
+foreach ($resultat as $value) {
+echo '<tr>'."\n";
+echo '<td><img class="photo" src="images/'.$value['sg_nom'].'" alt="image_'.$value['bd_id'].'" /></td>'."\n";
+echo '<td>'.$value['lg_nom'].'</td>'."\n";
+echo '<td>'.$value['lg_prix'].'</td>'."\n";
+echo '<td>'.$value['lg_pieces'].'</td>'."\n";
+echo '<td>'.$value['lg_genre'].'</td>'."\n";
+echo '<td>'.$value['lg_age'].'</td>'."\n";
+echo '<td><a href="table1_update_form.php?num='.$value['lg_id'].'">Modifier</a></td>'."\n";
+echo '<td><a href="table1_delete.php?num='.$value['lg_id'].'">Supprimer</a></td>'."\n";
+echo '</tr>'."\n";
+}
+echo '</tbody>'."\n";
+echo '</table>'."\n";
 
+}
 
     // on se déconnexte en mettant la variable de connexion à null 
     $mabd=null;
-  }
+}
       // affichage du catalogue des albums
-      function afficherCatalogue2($mabd) {
-        $req = "SELECT * FROM table_lego 
-                INNER JOIN table_saga ON table_lego._sg_id = table_saga.sg_id";
-        try {
-            $resultat = $mabd->query($req);
-        } catch (PDOException $e) {
-            // s'il y a une erreur, on l'affiche
-            echo '<p>Erreur : ' . $e->getMessage() . '</p>';
-            die();
-        }
-        foreach ($resultat as $value) {
-        echo '<table>'."\n";
-        echo '<thead><tr><th>Photo</th><th>Nom lego</th><th>Prix (&euro;)</th><th>Pieces</th><th>Genre</th><th>Modifier</th><th>Supprimer</th><th>age</th></tr></thead>'."\n";
-        echo '<tbody>'."\n";
-        foreach ($resultat as $value) {
-            echo '<tr>'."\n";
-            echo '<td><img class="photo" src="images/'.$value['sg_nom'].'" alt="image_'.$value['bd_id'].'" /></td>'."\n";
-            echo '<td>'.$value['lg_nom'].'</td>'."\n";
-            echo '<td>'.$value['lg_prix'].'</td>'."\n";
-            echo '<td>'.$value['lg_pieces'].'</td>'."\n";
-            echo '<td>'.$value['lg_genre'].'</td>'."\n";
-            echo '<td>'.$value['lg_age'].'</td>'."\n";
-            echo '<td><a href="table1_update_form.php?num='.$value['lg_id'].'">Modifier</a></td>'."\n";
-            echo '<td><a href="table1_delete.php?num='.$value['lg_id'].'">Supprimer</a></td>'."\n";
-            echo '</tr>'."\n";
-        }
-        echo '</tbody>'."\n";
-        echo '</table>'."\n";
-
-};
+      function afficherListe($mabd) {

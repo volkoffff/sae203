@@ -12,7 +12,7 @@
         <?php
             require '../lib_crud.inc.php';
             $co=connexionBD();
-            afficherCatalogue2($co);
+            afficherListe($co);
             deconnexionBD($co);
         ?>
     </body>
