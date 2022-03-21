@@ -27,7 +27,6 @@
                 foreach ($resultat as $value) {
                     echo '<option value="'.$value['_sg_id'].'"> "'.$value['lg_age'].'"</option>';
                 }
-                deconnexionBD($co);
                 ?>
                 </select>
                 
@@ -38,7 +37,7 @@
 	            deconnexionBD($co);
 	        ?>
 	        </select><br />
-	        <input type="submit" value="Ajouter" />
+	        <input type="submit" name="">
 	    </form>
 	</body>
 </html>
