@@ -28,6 +28,12 @@
     return $mabd;
   }
 
+
+
+
+
+
+  
   // déconnexion de la base de données
   function deconnexionBD(&$mabd) {
     // on se déconnexte en mettant la variable de connexion à null 
