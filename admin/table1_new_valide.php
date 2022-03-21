@@ -16,7 +16,6 @@
 	        $pieces=$_POST['pieces'];
             $genre=$_POST['genre'];
             $age=$_POST['age'];
-	        $auteur=$_POST['auteur'];
 	        $nouvelleimage=$_POST['nouvelleImage'];
             $legosaga=$_POST['legosaga'];
 	        var_dump($_POST);
@@ -46,7 +45,7 @@
 	
 	        $co=connexionBD();
 	        ajouterBD($co, $nom, $prix, $pieces, 
-	        		$nouvelleImage, $genre, $age, $auteur);
+	        		$nouvelleImage, $genre, $age);
 	        deconnexionBD($co);
 	    ?>
 	</body>

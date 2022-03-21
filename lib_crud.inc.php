@@ -148,3 +148,26 @@ echo '</table>'."\n";
             echo '</option>'."\n";
         }
     }
+
+
+
+// afficher les auteurs (prénom et nom) dans des champs "option"
+function afficherAuteursOptions2($mabd) {
+    // on sélectionne tous les auteurs de la table auteurs
+    $req = "SELECT * FROM table_lego";
+    try {
+        $resultat = $mabd->query($req);
+    } catch (PDOException $e) {
+        // s'il y a une erreur, on l'affiche
+        echo '<p>Erreur : ' . $e->getMessage() . '</p>';
+        die();
+    }
+    // pour chaque auteur, on met son id, son prénom et son nom 
+    // dans une balise <option>
+    foreach ($resultat as $value) {
+        echo '<option value="'.$value['lg_id'].'">'; // id de l'auteur
+        echo $value['lg_genre']; // prénom espace nom
+        echo '</option>'."\n";
+    }
+}
+
