@@ -154,7 +154,7 @@ echo '</table>'."\n";
     function ajouterBD($mabd, $nom, $prix, $pieces, $genre, $age, $nouvelleImage)
     {
         $req = 'INSERT INTO `table_lego`(`lg_nom`, `lg_prix`, `lg_pieces`, `lg_image`, `lg_genre`,
-         `lg_age`) VALUES ("'.$nom.'", '.$prix.' , '.$pieces.', "'.$nom.'" , '.$genre.', '.$age.' )';
+         `lg_age`) VALUES ("'.$nom.'", '.$prix.' , '.$pieces.', "'.$nouvelleImage.'" , '.$genre.', '.$age.' )';
         echo '<p>' . $req . '</p>' . "\n";
         try {
             $resultat = $mabd->query($req);
