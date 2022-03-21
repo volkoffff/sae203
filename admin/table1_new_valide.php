@@ -16,7 +16,7 @@
 	        $pieces=$_POST['pieces'];
             $genre=$_POST['genre'];
             $age=$_POST['age'];
-	        $nouvelleimage=$_POST['nouvelleImage'];
+	        $nouvelleimage=$_POST['nouvelleimage'];
             $legosaga=$_POST['legosaga'];
 	        var_dump($_POST);
 	        var_dump($_FILES);
