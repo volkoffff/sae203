@@ -19,13 +19,7 @@
             </select>
 	        âge : <input type="number" name="age" required><br />
 	        Photo : <input type="file" name="nouvelleImage" required> <br/>
-	        lego saga : <select name="lego_saga">
-                <?php  
-                $co=connexionBD(); 
-                afficherAuteursOptions($co);
-                ?>
-                </select>
-                
+	        lego saga : <select name="lego_saga">        
 	        <?php
 	            require '../lib_crud.inc.php';
 	            $co=connexionBD();
