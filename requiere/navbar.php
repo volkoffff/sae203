@@ -1,7 +1,7 @@
 <nav class="navbar">
           <div class="container">
               <div class="row justify-content-between">
-                  <div class="logo"><a href="index.html">LEGO<span>SET</span></a></div>
+                  <div class="logo"><a href="index.php">LEGO<span>SET</span></a></div>
                   <div class="links">
                   <ul class="menu">
                       <li class="nav-item"><a href="index.php" class="nav-link active">Home <span></span></a></li>
