@@ -22,10 +22,10 @@
 	        lego saga : <select name="lego_saga">
                 <?php  
                 $co=connexionBD(); 
-                $req = "SELECT * FROM  table_lego ";
+                $req = "SELECT * FROM  table_saga ";
                 $resultat = $mabd->query($req);
                 foreach ($resultat as $value) {
-                    echo '<option value="'.$value['_sg_id'].'"> '.$value['lg_nom'].'</option>';
+                    echo '<option value="'.$value['_sg_id'].'"> "'.$value['sg_nom'].'"</option>';
                 }
                 ?>
 	        <?php
