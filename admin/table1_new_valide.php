@@ -11,12 +11,12 @@
 	    <?php
 	        require '../lib_crud.inc.php';
 	
-	        $nom=$_POST['lg_nom'];
-	        $prix=$_POST['lg_prix'];
-	        $piece=$_POST['lg_pieces'];
-	        $image=$_POST['lg_image'];
-            $genre=$_POST['lg_genre'];
-            $age=$_POST['lg_age'];
+	        $nom=$_POST['nom'];
+	        $prix=$_POST['prix'];
+	        $pieces=$_POST['pieces'];
+	        $nouvelleImage=$_POST['nouvelleImage'];
+            $genre=$_POST['genre'];
+            $age=$_POST['age'];
 	        $auteur=$_POST['auteur'];
 	        var_dump($_POST);
 	        var_dump($_FILES);
@@ -44,8 +44,8 @@
 	        }
 	
 	        $co=connexionBD();
-	        ajouterBD($co, $nom, $prix, $piece, 
-	        		$image, $genre, $age, $auteur);
+	        ajouterBD($co, $nom, $prix, $pieces, 
+	        		$nouvelleImage, $genre, $age, $auteur);
 	        deconnexionBD($co);
 	    ?>
 	</body>
