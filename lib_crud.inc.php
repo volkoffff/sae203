@@ -40,9 +40,8 @@
   }
       // affichage du catalogue des albums
       function afficherCatalogue($mabd) {
-        $req = "SELECT * FROM bandes_dessinees 
-                INNER JOIN auteurs 
-                ON bandes_dessinees._auteur_id = auteurs.auteur_id";
+        $req = "SELECT * FROM table_lego 
+                INNER JOIN table_saga ON table_lego._sg_id = table_saga.sg_id";
         try {
             $resultat = $mabd->query($req);
         } catch (PDOException $e) {
