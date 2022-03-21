@@ -19,28 +19,6 @@
             </select>
 	        âge : <input type="number" name="age" required><br />
 	        Photo : <input type="file" name="nouvelleImage" required> <br/>
-
-
-
-
-            numero de l'auteur:<select name="tkt">
-    	<?php
-		$mabd = new PDO('mysql:host=localhost;dbname=mmi21h07;charset=UTF8;', 'sae203', 'Roro2003$2');
-		$mabd->query('SET NAMES utf8;');
-		$req = "SELECT * FROM  table_lego ";
-		$resultat = $mabd->query($req);
-        foreach ($resultat as $value) {
-            echo '<option value="'.$value['lg_nom'].'"> '.$value['lg_nom'].' '.$value['lg_nom'].'</option>';
-        }
-        ?>
-        </select>   
-    taper pour l'instant un numero d'auteur (1,2,3...) pas son nom :-)<br>
-    <input type="submit" name="">
-
-
-
-
-
 	        lego saga : <select name="lego_saga">
                 <?php  
                 $co=connexionBD(); 
