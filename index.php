@@ -12,8 +12,8 @@
         </div>
     </div>
      <div class="btn_div">
-        <a class="btn_see" href="catalogue.php">catalogue</a>
-        <a class="btn_see btn_see2" href="listing.php">rechercher</a>
+        <a class="btn_see" href="listing.php">catalogue</a>
+        <a class="btn_see btn_see2" href="form_recherche.php">rechercher</a>
     </div>
 </div>
 <?php
