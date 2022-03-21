@@ -3,7 +3,6 @@
     require 'requiere/navbar.php';
     require 'lib_crud.inc.php';
     $mabd=connexionBD();
-    afficher_list();
     $req = "SELECT * FROM table_lego INNER JOIN table_saga ON table_lego._sg_id = table_saga.sg_id";
     $resultat = $mabd->query($req);
     echo '<div class="ma3">';
