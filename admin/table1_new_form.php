@@ -18,14 +18,14 @@
             <option value="fille">fille</option>
             </select>
 	        âge : <input type="number" name="age" required><br />
-	        Photo :                 <input type="file" name="nouvelleImage" />
+	        Photo : <input type="file" name="nouvelleImage" required> <br/>
 	        lego saga : <select name="lego_saga">
                 <?php  
                 $co=connexionBD(); 
-                $req = "SELECT * FROM  table_saga ";
+                $req = "SELECT * FROM  table_lego ";
                 $resultat = $mabd->query($req);
                 foreach ($resultat as $value) {
-                    echo '<option value="'.$value['_sg_id'].'"> "'.$value['sg_nom'].'"</option>';
+                    echo '<option value="'.$value['_sg_id'].'"> "'.$value['lg_age'].'"</option>';
                 }
                 ?>
 	        <?php
