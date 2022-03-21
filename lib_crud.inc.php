@@ -27,13 +27,52 @@
     // on retourne la variable de connexion
     return $mabd;
   }
+  function afficher_list(){
+    $req = "SELECT * FROM table_lego INNER JOIN table_saga ON table_lego._sg_id = table_saga.sg_id";
+    $resultat = $mabd->query($req);
+    echo '<div class="ma3">';
+    foreach ($resultat as $value) {
+        // echo $value['lg_nom'] . ' , ' . $value['lg_prix'] . ' euro ';
+        // echo '<br> genre: ' . $value['lg_genre']. '<hr>';
+
+        echo '<div class="carte">';
+        echo '<div class="g1">';
+        echo '<h4 id="titre_produit">' .$value['lg_nom']. '</h4>';
+        echo '</div>';
+        echo '<div class="g2">';
+        echo '<img class="boule_couleur" src="images/'.$value['sg_couleur'].'">';
+        echo '<img class="image_list" src="images/'.$value['lg_image'].'">';
+        echo '</div>';
+        echo '<div class="g3">';
+        echo '<img src="images/'.$value['sg_nom'].'">';
+        echo '</div>';
+        echo '<div class="g4">';
+        echo '<div class="g41">';
+        echo '<img src="images/block.png">';
+        echo '<p>'.$value['lg_pieces'].'</p>';
+        echo '</div>';
+        echo '<div class="g41">';
+        echo '<img id="img_enfant" src="images/enfant.png">';
+        echo '<p>'.$value['lg_age'].' ans</p>';
+        echo '</div>';
+        echo '<div class="g42">';
+        echo '<p id="prix">'.$value['lg_prix'].' €</p>';
+        echo '</div>';
+        echo '</div>';
+        echo '<div class="g5">';
+        echo '<p>catégorie:<p>';
+        echo '<p>'.$value['sg_genre']. '/</p>';
+        echo '<p>'.$value['lg_genre']. '</p>'; 
+        echo '</div>';
+        echo '</div>';
+    }
+    echo '</div>';
+  }
 
 
 
 
 
-
-  
   // déconnexion de la base de données
   function deconnexionBD(&$mabd) {
     // on se déconnexte en mettant la variable de connexion à null 
