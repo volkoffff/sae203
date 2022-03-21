@@ -150,4 +150,23 @@ echo '</table>'."\n";
     }
 
 
-
+    // fonction d'ajout d'une BD dans la table bande_dessinees
+    function ajouterBD($mabd, $nom, $prix, $pieces, $genre, $age, $nouvelleImage)
+    {
+        $req = 'INSERT INTO `table_lego`(`lg_nom`, `lg_prix`, `lg_pieces`, `lg_image`, `lg_genre`,
+         `lg_age`) VALUES ("'.$nom.'", '.$prix.' , '.$pieces.', "'.$nom.'" , '.$genre.', '.$age.' )';
+        echo '<p>' . $req . '</p>' . "\n";
+        try {
+            $resultat = $mabd->query($req);
+        } catch (PDOException $e) {
+            // s'il y a une erreur, on l'affiche
+            echo '<p>Erreur : ' . $e->getMessage() . '</p>';
+            die();
+        }
+        if ($resultat->rowCount() == 1) {
+            echo '<p>La boite lego à était ajouté ' . $titre . ' a été ajoutée au catalogue.</p>' . "\n";
+        } else {
+            echo '<p>Erreur lors de l\'ajout.</p>' . "\n";
+            die();
+        }
+    }
