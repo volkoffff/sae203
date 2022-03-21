@@ -43,7 +43,7 @@
         echo '</div>';
     }
     echo '</div>';
-    function deconnexionBD(&$mabd)
+    function deconnexionBD(&$mabd);
 ?>
 
 <div class="arnaque"></div>
