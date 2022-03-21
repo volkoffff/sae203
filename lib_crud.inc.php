@@ -39,7 +39,7 @@
     $mabd=null;
   }
       // affichage du catalogue des albums
-      function afficherList($mabd) {
+      function afficherCatalogue($mabd) {
         $req = "SELECT * FROM table_lego 
                 INNER JOIN table_saga ON table_lego._sg_id = table_saga.sg_id";
         try {
@@ -97,7 +97,7 @@ function afficherListe($mabd) {
     $mabd=null;
   }
       // affichage du catalogue des albums
-      function afficherCatalogue($mabd) {
+      function afficherCatalogue2($mabd) {
         $req = "SELECT * FROM table_lego 
                 INNER JOIN table_saga ON table_lego._sg_id = table_saga.sg_id";
         try {
