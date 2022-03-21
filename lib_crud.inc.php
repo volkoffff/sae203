@@ -103,11 +103,11 @@ die();
 }
 foreach ($resultat as $value) {
 echo '<table>'."\n";
-echo '<thead><tr><th>Photo</th><th>Nom lego</th><th>Prix (&euro;)</th><th>Pieces</th><th>Genre</th><th>Modifier</th><th>Supprimer</th><th>age</th></tr></thead>'."\n";
+echo '<thead><tr><th>Photo</th><th>Nom lego</th><th>Prix (&euro;)</th><th>Pieces</th><th>Genre</th><th>age</th><th>Modifier</th><th>Supprimer</th></tr></thead>'."\n";
 echo '<tbody>'."\n";
 foreach ($resultat as $value) {
 echo '<tr>'."\n";
-echo '<td><img class="photo" src="images/'.$value['sg_nom'].'" alt="image_'.$value['bd_id'].'" /></td>'."\n";
+echo '<td><img class="photo" src="images/'.$value['sg_nom'].'"</td>'."\n";
 echo '<td>'.$value['lg_nom'].'</td>'."\n";
 echo '<td>'.$value['lg_prix'].'</td>'."\n";
 echo '<td>'.$value['lg_pieces'].'</td>'."\n";
