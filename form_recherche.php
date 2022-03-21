@@ -36,7 +36,7 @@
                     <option value="<16">entre 2000 et 400 pièces</option>
                     <option value="<18">plus de 4000 pièces</option>
                 </select>
-                <input type="submit" class="envoyer" value="chercher">
+                <input type="submit" href="reponse_recherche.php" class="envoyer" value="chercher">
         </form>        
     </div>
 </div>
