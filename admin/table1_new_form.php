@@ -27,8 +27,10 @@
                 foreach ($resultat as $value) {
                     echo '<option value="'.$value['_sg_id'].'"> "'.$value['lg_age'].'"</option>';
                 }
+                deconnexionBD($co);
                 ?>
                 </select>
+                
 	        <?php
 	            require '../lib_crud.inc.php';
 	            $co=connexionBD();
