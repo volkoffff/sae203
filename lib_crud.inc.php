@@ -240,11 +240,11 @@ echo '</table>'."\n";
     function modifierBD($co, $id ,$nom, $prix,  $pieces, $nouvelleImage, $genre, $age, $legosaga)
     {
         $req = 'UPDATE table_lego
-                SET lg_nom = '.$nom.',
+                SET lg_nom = "'.$nom.'",
                     lg_prix = '.$prix.',
                     lg_pieces = '.$pieces.',
-                    lg_image = '.$nouvelleImage.',
-                    lg_genre = '.$genre.',
+                    lg_image = "'.$nouvelleImage.'",
+                    lg_genre = "'.$genre.'",
                     lg_age = '.$age.',
                     lg_saga = '.$legosaga.',
                 WHERE lg_id='.$id;
