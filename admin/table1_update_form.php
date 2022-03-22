@@ -31,7 +31,6 @@
 	        Photo : <input type="file" name="nouvelleimage" required> <br/>
 	        logo de la licence lego : <select name="legosaga">        
 	        <?php
-	            require '../lib_crud.inc.php';
 	            $co=connexionBD();
 	            afficherAuteursOptionsSelectionne($co, $boite['_sg_id']);
 	            deconnexionBD($co);
