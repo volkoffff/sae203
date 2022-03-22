@@ -18,6 +18,7 @@
         deconnexionBD($co);
     ?>
 	    <form action="table1_update_valide.php" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="num" value="<?= $id; ?>" />
 	        nom : <input type="text" name="nom" value="<?php echo $boite['lg_nom']; ?>" required /><br />
 	        prix : <input type="number" name="prix" value="<?php echo $boite['lg_prix']; ?>" min="0"  required /><br />
 	        pieces : <input type="number" name="pieces" value="<?php echo $boite['lg_pieces']; ?>" min="0" required /><br />
