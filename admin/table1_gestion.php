@@ -1,5 +1,5 @@
 <?php
-    require 'requiere/header.php';
+    require '../requiere/header.php';
 ?>
 <!DOCTYPE html>
 <html>
