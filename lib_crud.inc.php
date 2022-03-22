@@ -266,9 +266,9 @@ echo '</table>'."\n";
 
 // affichage des resultats de recherche
 function afficherResultatRecherche($mabd) {
-    $req = 'SELECT * FROM table_lego 
+    $req = "SELECT * FROM table_lego 
     INNER JOIN table_saga ON table_lego._sg_id = table_saga.sg_id 
-    WHERE lg_nom like "%'.htmlentities(filter_var($_POST['searchbar'])).'%"';
+    WHERE lg_nom like '%".$_POST['searchbar'].'%'."'";
     try {
         $resultat = $mabd->query($req);
     } catch (PDOException $e) {
