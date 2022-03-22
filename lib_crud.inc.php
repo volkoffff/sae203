@@ -246,7 +246,7 @@ echo '</table>'."\n";
                     lg_image = "'.$nouvelleImage.'",
                     lg_genre = "'.$genre.'",
                     lg_age = '.$age.',
-                    lg_saga = '.$legosaga.'
+                    _sg_id = '.$legosaga.'
                 WHERE lg_id='.$id;
         echo '<p>' . $req . '</p>' . "\n";
         try {
