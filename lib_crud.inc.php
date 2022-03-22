@@ -164,7 +164,7 @@ echo '</table>'."\n";
             die();
         }
         if ($resultat->rowCount() == 1) {
-            echo '<p>La boite lego à était ajouté ' . $titre . ' a été ajoutée au catalogue.</p>' . "\n";
+            echo '<p>La boite lego à était ajouté ' . $nom . ' a été ajoutée au catalogue.</p>' . "\n";
         } else {
             echo '<p>Erreur lors de l\'ajout.</p>' . "\n";
             die();
