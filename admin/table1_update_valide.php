@@ -41,7 +41,7 @@
 	        }
 	
 	        $co=connexionBD();
-	        modifierBD($co, $nom, $prix,  $pieces, $nouvelleImage, $genre, $age, $legosaga);
+	        modifierBD($mabd ,$id, $co, $nom, $prix,  $pieces, $nouvelleImage, $genre, $age, $legosaga);
 	        deconnexionBD($co);
 	    ?>
 	</body>
