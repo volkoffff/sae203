@@ -18,7 +18,7 @@
                     deconnexionBD($co);
                 ?>
             </datalist>
-        <input type="submit" class="envoyer" value="chercher">
+        <input type="submit" value="chercher !" />
 </form>
 
 
