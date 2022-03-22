@@ -313,5 +313,5 @@ function afficherResultatRecherche($mabd) {
         echo '</div>';
     }
     echo '</div>';
-    echo <div class="arnaque"></div>;
+    echo '<div class="arnaque"></div>';
 }
