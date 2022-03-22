@@ -14,7 +14,7 @@
 	        $id=$_GEt['num'];
 	
 	        $co=connexionBD();
-	        effacerBD($mabd, $id)
+	        effacerBD($co, $id);
 	        deconnexionBD($co);
 	    ?>
 	</body>
