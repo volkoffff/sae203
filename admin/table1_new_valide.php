@@ -43,8 +43,7 @@
 	        }
 	
 	        $co=connexionBD();
-	        ajouterBD($co, $nom, $prix,  $pieces, $nouvelleImage, 
-	        		 $genre, $age, $legosaga);
+	        ajouterBD($co, $nom, $prix,  $pieces, $nouvelleImage, $genre, $age, $legosaga);
 	        deconnexionBD($co);
 	    ?>
 	</body>

@@ -2,8 +2,8 @@
     require 'requiere/header.php';
     require 'requiere/navbar.php';
 ?>
-<h1>Nos albums</h1>
-<p>Résultats de votre recherche</p>
+<!-- <h1>Nos albums</h1>
+<p>Résultats de votre recherche</p> -->
 <hr />
 <?php
     require 'lib_crud.inc.php';
