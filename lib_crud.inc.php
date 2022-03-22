@@ -192,7 +192,6 @@ echo '</table>'."\n";
     }
 
 
-    ...
     // fonction de récupération des informations d'une BD
     function getBD($mabd, $idAlbum) {
         $req = 'SELECT * FROM table_lego where bd_id='.$idAlbum;
@@ -210,8 +209,6 @@ echo '</table>'."\n";
     }
 
 
-
-    ...
 	// afficher le "bon" auteur parmi les auteurs (prénom et nom)
    // dans les balises "<option>"
 	function afficherAuteursOptionsSelectionne($mabd, $idAuteur) {
