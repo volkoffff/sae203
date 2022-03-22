@@ -427,7 +427,7 @@ footer{
 .img_hero {
     width: 100vw;
     height: 100vh;
-    background-image: url(images/lego.png);
+    background-image: url(images/uploads/lego.png);
     background-size: cover;
     z-index: 40;
 }
