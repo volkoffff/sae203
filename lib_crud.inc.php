@@ -212,7 +212,7 @@ echo '</table>'."\n";
 	// afficher le "bon" auteur parmi les auteurs (prénom et nom)
    // dans les balises "<option>"
 	function afficherAuteursOptionsSelectionne($mabd, $idAuteur) {
-        $req = "SELECT * FROM auteurs";
+        $req = "SELECT * FROM lg_id";
         try {
             $resultat = $mabd->query($req);
         } catch (PDOException $e) {
@@ -222,7 +222,7 @@ echo '</table>'."\n";
         }
         foreach ($resultat as $value) {
             echo '<option value="'.$value['auteur_id'].'"';
-            if ($value['auteur_id']==???) {
+            if ($value['auteur_id']==$idAuteur) {
                 echo ' selected="selected"';
             }
             echo '>';
