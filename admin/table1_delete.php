@@ -11,8 +11,7 @@
 	    <?php
 	        require '../lib_crud.inc.php';
 	
-	        $id=$_GEt['num'];
-	
+	        $id=$_GET['num'];
 	        $co=connexionBD();
 	        effacerBD($co, $id);
 	        deconnexionBD($co);
