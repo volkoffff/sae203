@@ -22,7 +22,7 @@
 	        prix (xx.xx) : <input type="number" name="prix" value="<?php echo $boite['lg_prix']; ?>" min="0"  required /><br />
 	        pieces : <input type="number" name="pieces" value="<?php echo $boite['lg_pieces']; ?>" min="0" required /><br />
 	        genre <select name="genre"  ?>" required /><br />
-            <option value="<?php $boite['lg_genre'];> garder le meme genre : <?php echo $boite['lg_genre'] ?> </option>
+            <option value="'.$boite['lg_genre'].'"> garder le meme genre : <?php echo $boite['lg_genre'] ?> </option>
             <option value="mixte">mixte</option>
             <option value="homme">homme</option>
             <option value="fille">fille</option>
