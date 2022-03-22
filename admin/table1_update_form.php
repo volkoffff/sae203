@@ -1,3 +1,6 @@
+<?php
+    require 'requiere/header.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +13,6 @@
     <hr />
     <?php
         require '../lib_crud.inc.php';
-        require 'requiere/header.php';
 
         $id=$_GET['num'];
         $co=connexionBD();
