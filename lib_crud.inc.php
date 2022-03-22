@@ -249,7 +249,7 @@ echo '</table>'."\n";
     // Génération de la liste des auteurs dans le formulaire de recherche
     function genererDatalistAuteurs($mabd) {
         // on sélectionne le nom et prénom de tous les auteurs de la table auteurs
-        $req = "SELECT auteur_nom, auteur_prenom FROM auteurs";
+        $req = "SELECT lg_nom FROM table_lego";
         try {
             $resultat = $mabd->query($req);
         } catch (PDOException $e) {
@@ -262,3 +262,21 @@ echo '</table>'."\n";
             echo '<option value="'.$value=['lego_nom'].'">'."\n"; 
         } 
     }
+
+
+// affichage des resultats de recherche
+function afficherResultatRecherche($mabd) {
+    $req = "SELECT * FROM table_lego 
+    INNER JOIN table_saga ON table_lego._sg_id = table_saga.sg_id";
+            WHERE lg_nom like"%'.$chaine.'%";
+    try {
+        $resultat = $mabd->query($req);
+    } catch (PDOException $e) {
+        // s'il y a une erreur, on l'affiche
+        echo '<p>Erreur : ' . $e->getMessage() . '</p>';
+        die();
+    }
+    // ICI VOTRE CODE POUR AFFICHER LES ALBUMS FILTRES
+    // ...
+    // ...
+}

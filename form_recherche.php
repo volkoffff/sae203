@@ -25,7 +25,7 @@
 
 
 
-</datalist>
+<!-- </datalist>
     <div class="ma4">
         <form action="form_recherche.php" class="ma5" method="GET" data-parsley-validate>
             <label class="qform" for="saga">Choisissez une cathégorie:</label>
@@ -62,7 +62,7 @@
                 <input type="submit" href="reponse_recherche.php" class="envoyer" value="chercher">
         </form>        
     </div>
-</div>
+</div> -->
 <?php
     require 'requiere/footer.php';
     require 'requiere/fin.php';
