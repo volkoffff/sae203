@@ -1,6 +1,6 @@
 <?php
     require 'requiere/header.php';
-    require 'requiere/navbar.php';
+   // require 'requiere/navbar.php';
 ?>
 <div class="img_hero">
 
