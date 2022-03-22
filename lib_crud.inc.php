@@ -268,7 +268,7 @@ echo '</table>'."\n";
 function afficherResultatRecherche($mabd) {
     $req = "SELECT * FROM table_lego 
     INNER JOIN table_saga ON table_lego._sg_id = table_saga.sg_id 
-    WHERE lg_nom like '%".$_POST['searchbar'].'%'."'";
+    WHERE lg_nom like '%".$_POST['nom'].'%'."'";
     try {
         $resultat = $mabd->query($req);
     } catch (PDOException $e) {

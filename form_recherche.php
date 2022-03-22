@@ -5,7 +5,7 @@
 <div class="img_hero">
 
 <form action="reponse_recherche.php" method="POST">
-        <input type="search" name="searchbar" id="real" list="boite" />
+        <input type="search" name="nom" id="real" list="boite" />
             <datalist id="boite">
                 <?php
                     // On va afficher ici la datalist
