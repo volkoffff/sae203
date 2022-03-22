@@ -190,3 +190,46 @@ echo '</table>'."\n";
             die();
         }
     }
+
+
+    ...
+    // fonction de récupération des informations d'une BD
+    function getBD($mabd, $idAlbum) {
+        $req = 'SELECT * FROM table_lego where bd_id='.$idAlbum;
+        echo '<p>GetBD() : '.$req.'</p>'."\n";
+        try {
+            $resultat = $mabd->query($req);
+        } catch (PDOException $e) {
+            // s'il y a une erreur, on l'affiche
+            echo '<p>Erreur : ' . $e->getMessage() . '</p>';
+            die();
+        }
+        // la fonction retourne le tableau associatif 
+        // contenant les champs et leurs valeurs
+        return $resultat->fetch();
+    }
+
+
+
+    ...
+	// afficher le "bon" auteur parmi les auteurs (prénom et nom)
+   // dans les balises "<option>"
+	function afficherAuteursOptionsSelectionne($mabd, $idAuteur) {
+        $req = "SELECT * FROM auteurs";
+        try {
+            $resultat = $mabd->query($req);
+        } catch (PDOException $e) {
+            // s'il y a une erreur, on l'affiche
+            echo '<p>Erreur : ' . $e->getMessage() . '</p>';
+            die();
+        }
+        foreach ($resultat as $value) {
+            echo '<option value="'.$value['auteur_id'].'"';
+            if ($value['auteur_id']==???) {
+                echo ' selected="selected"';
+            }
+            echo '>';
+            echo $value['auteur_prenom'].' '.$value['auteur_nom'];
+            echo '</option>'."\n";
+        }
+    }
