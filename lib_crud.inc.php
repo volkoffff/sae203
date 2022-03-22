@@ -250,7 +250,7 @@ echo '</table>'."\n";
                 WHERE lg_id='.$id;
         echo '<p>' . $req . '</p>' . "\n";
         try {
-            $resultat = $mabd->query($req);
+            $resultat = $co->query($req);
         } catch (PDOException $e) {
             // s'il y a une erreur, on l'affiche
             echo '<p>Erreur : ' . $e->getMessage() . '</p>';

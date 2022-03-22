@@ -12,7 +12,7 @@
 	        require '../lib_crud.inc.php';
 	
             
-            $id=$_POST['id'];
+            $id=$_POST['num'];
 	        $nom=$_POST['nom'];
 	        $prix=$_POST['prix'];
 	        $pieces=$_POST['pieces'];
