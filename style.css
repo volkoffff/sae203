@@ -743,6 +743,7 @@ form {
 body {
     background-color: yellow;
     color: red;
+    font-size: 14px;
 }
 
 thead tr {
