@@ -247,7 +247,7 @@ echo '</table>'."\n";
                     lg_genre = '.$genre.',
                     lg_age = '.$age.',
                     lg_saga = '.$legosaga.',
-                WHERE bd_id='.$id;
+                WHERE lg_id='.$id;
         echo '<p>' . $req . '</p>' . "\n";
         try {
             $resultat = $mabd->query($req);
