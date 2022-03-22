@@ -4,8 +4,6 @@
 ?>
 <div class="img_hero">
 
-
-
 <form action="reponse_recherche.php" method="POST">
         <input type="search" id="real" list="boite" />
             <datalist id="boite">
