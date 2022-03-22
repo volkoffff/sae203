@@ -17,11 +17,11 @@
         var_dump($boite);
         deconnexionBD($co);
     ?>
-	    <form action="table1_new_valide.php" method="POST" enctype="multipart/form-data">
+	    <form action="table1_update_valide.php" method="POST" enctype="multipart/form-data">
 	        nom : <input type="text" name="nom" value="<?php echo $boite['lg_nom']; ?>" required /><br />
-	        prix (xx.xx) : <input type="number" name="prix" value="<?php echo $boite['lg_prix']; ?>" min="0"  required /><br />
+	        prix : <input type="number" name="prix" value="<?php echo $boite['lg_prix']; ?>" min="0"  required /><br />
 	        pieces : <input type="number" name="pieces" value="<?php echo $boite['lg_pieces']; ?>" min="0" required /><br />
-	        genre <select name="genre"  ?>" required /><br />
+	        genre :<select name="genre"  ?>" required /><br />
             <option value="<?php echo $boite['lg_genre'];?>"> garder le meme genre : <?php echo $boite['lg_genre']; ?> </option>
             <option value="mixte">mixte</option>
             <option value="homme">homme</option>
