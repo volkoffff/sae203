@@ -1,6 +1,3 @@
-<?php
-    require 'requiere/header.php';
-?>
 <!DOCTYPE html>
 <html>
 <head>
