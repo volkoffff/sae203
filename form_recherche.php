@@ -8,7 +8,7 @@
 <datalist id="auteurs">
 
 <form action="" method="POST">
-        <input type="search" id="real" list="boite" autocomplete="off" />
+        <input type="search" id="real" list="boite" />
             <datalist id="boite">
                 <?php
                     // On va afficher ici la datalist
