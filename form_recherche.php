@@ -7,7 +7,7 @@
 <input type="search" id="real" list="auteurs" autocomplete="off" />
 <datalist id="auteurs">
 
-<form action="" method="POST">
+<form action="reponse_recherche.php" method="POST">
         <input type="search" id="real" list="boite" />
             <datalist id="boite">
                 <?php
@@ -18,7 +18,7 @@
                     deconnexionBD($co);
                 ?>
             </datalist>
-        <input type="submit" name="chercher !" />
+        <input type="submit" value="chercher !" />
 </form>
 
 
