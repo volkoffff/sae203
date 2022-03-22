@@ -151,10 +151,10 @@ echo '</table>'."\n";
 
 
     // fonction d'ajout d'une BD dans la table bande_dessinees
-    function ajouterBD($mabd, $nom, $prix,  $pieces, $nouvelleImage, $genre, $age, )
+    function ajouterBD($mabd, $nom, $prix,  $pieces, $nouvelleImage, $genre, $age, $legosaga)
     {
         $req = 'INSERT INTO table_lego(lg_nom,lg_prix, lg_pieces,lg_image,lg_genre,
-         lg_age) VALUES ("'.$nom.'", '.$prix.' , '.$pieces.', "'.$nouvelleImage.'" , "'.$genre.'", '.$age.' )';
+         lg_age,_sg_id) VALUES ("'.$nom.'", '.$prix.' , '.$pieces.', "'.$nouvelleImage.'" , "'.$genre.'", '.$age.', '.$legosaga.')';
         echo '<p>' . $req . '</p>' . "\n";
         try {
             $resultat = $mabd->query($req);
