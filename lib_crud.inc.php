@@ -61,7 +61,7 @@
             echo '</div>';
             echo '<div class="g2">';
             echo '<img class="boule_couleur" src="images/'.$value['sg_couleur'].'">';
-            echo '<img class="image_list" src="images/'.$value['lg_image'].'">';
+            echo '<img class="image_list" src="images/uploads/'.$value['lg_image'].'">';
             echo '</div>';
             echo '<div class="g3">';
             echo '<img src="images/'.$value['sg_nom'].'">';
