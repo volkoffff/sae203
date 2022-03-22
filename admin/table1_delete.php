@@ -14,8 +14,7 @@
 	        $id=$_GEt['num'];
 	
 	        $co=connexionBD();
-	        ajouterBD($co, $nom, $prix, $pieces, 
-	        		$nouvelleImage, $genre, $age);
+	        effacerBD($mabd, $id)
 	        deconnexionBD($co);
 	    ?>
 	</body>

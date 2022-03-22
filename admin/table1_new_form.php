@@ -23,7 +23,7 @@
 	        <?php
 	            require '../lib_crud.inc.php';
 	            $co=connexionBD();
-	            effacerBD($co, $id);
+	            afficherAuteursOptions($co,);
 	            deconnexionBD($co);
 	        ?>
 	        </select><br />
