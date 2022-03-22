@@ -268,7 +268,7 @@ echo '</table>'."\n";
 function afficherResultatRecherche($mabd) {
     $req = 'SELECT * FROM table_lego 
     INNER JOIN table_saga ON table_lego._sg_id = table_saga.sg_id
-            WHERE lg_nom like"%'.$chaine.'%"';
+            WHERE lg_nom LIKE '%".htmlentities(filter_var($_POST['barrerecherche']))."%'";
     try {
         $resultat = $mabd->query($req);
     } catch (PDOException $e) {
