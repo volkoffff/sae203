@@ -259,7 +259,7 @@ echo '</table>'."\n";
         }
         // pour chaque auteur, on met son nom et prénom dans une balise <option>
         foreach ($resultat as $value) {
-            echo '<option value="'.$value=['lego_nom'].'">'."\n"; 
+            echo '<option value="'.$value['lego_nom'].'">'."\n"; 
         } 
     }
 
