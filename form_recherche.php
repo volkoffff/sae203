@@ -19,6 +19,7 @@
                 ?>
             </datalist>
         <input type="submit" name="chercher !" />
+</form>
 
 
 
