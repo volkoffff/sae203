@@ -4,8 +4,7 @@
 ?>
 <div class="img_hero">
 
-<input type="search" id="real" list="auteurs" autocomplete="off" />
-<datalist id="auteurs">
+
 
 <form action="reponse_recherche.php" method="POST">
         <input type="search" id="real" list="boite" />
