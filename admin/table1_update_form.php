@@ -21,12 +21,13 @@
 	        nom : <input type="text" name="nom" value="<?php echo $boite['lg_nom']; ?>" required /><br />
 	        prix (xx.xx) : <input type="number" name="prix" value="<?php echo $boite['lg_prix']; ?>" min="0"  required /><br />
 	        pieces : <input type="number" name="pieces" value="<?php echo $boite['lg_pieces']; ?>" min="0" required /><br />
-	        genre <select name="genre" value="<?php echo $boite['lg_genre']; ?>" required /><br />
+	        genre <select name="genre"  ?>" required /><br />
+            <option value="<?php echo $boite['lg_genre'];>garder le meme genre : <?php echo $boite['lg_genre'] ?> </option>
             <option value="mixte">mixte</option>
             <option value="homme">homme</option>
             <option value="fille">fille</option>
             </select>
-	        âge : <input type="number" name="age" min="0" required><br />
+	        âge : <input type="number" name="age" value="<?php echo $boite['lg_age']; ?>" min="0" required><br />
 	        Photo : <input type="file" name="nouvelleimage" required> <br/>
 	        logo de la licence lego : <select name="legosaga">        
 	        <?php
