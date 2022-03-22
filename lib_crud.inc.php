@@ -221,12 +221,12 @@ echo '</table>'."\n";
             die();
         }
         foreach ($resultat as $value) {
-            echo '<option value="'.$value['auteur_id'].'"';
-            if ($value['auteur_id']==$idAuteur) {
+            echo '<option value="'.$value['sg_id'].'"';
+            if ($value['sg_id']==$idAuteur) {
                 echo ' selected="selected"';
             }
             echo '>';
-            echo $value['auteur_prenom'].' '.$value['auteur_nom'];
+            echo $value['sg_nom'];
             echo '</option>'."\n";
         }
     }

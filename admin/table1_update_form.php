@@ -13,7 +13,7 @@
 
         $id=$_GET['num'];
         $co=connexionBD();
-        $album=getBD($co, $id);
+        $boite=getBD($co, $id);
         var_dump($album);
         deconnexionBD($co);
     ?>
@@ -32,7 +32,7 @@
 	        <?php
 	            require '../lib_crud.inc.php';
 	            $co=connexionBD();
-	            afficherAuteursOptions($co, $album['_auteur_id']);
+	            afficherAuteursOptions($co, $boite['_sg_id']);
 	            deconnexionBD($co);
 	        ?>
         </select><br />
