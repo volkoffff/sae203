@@ -11,6 +11,8 @@
 	    <?php
 	        require '../lib_crud.inc.php';
 	
+            
+            $id=$_POST['id'];
 	        $nom=$_POST['nom'];
 	        $prix=$_POST['prix'];
 	        $pieces=$_POST['pieces'];
@@ -41,7 +43,7 @@
 	        }
 	
 	        $co=connexionBD();
-	        modifierBD($mabd ,$id, $co, $nom, $prix,  $pieces, $nouvelleImage, $genre, $age, $legosaga);
+	        modifierBD($co, $id, $nom, $prix,  $pieces, $nouvelleImage, $genre, $age, $legosaga);
 	        deconnexionBD($co);
 	    ?>
 	</body>

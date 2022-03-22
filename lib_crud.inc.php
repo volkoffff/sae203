@@ -237,7 +237,7 @@ echo '</table>'."\n";
 
 
 	// fonction de modification d'une BD dans la table bande_dessinees
-    function modifierBD($mabd ,$id , $co, $nom, $prix,  $pieces, $nouvelleImage, $genre, $age, $legosaga)
+    function modifierBD($co, $id ,$nom, $prix,  $pieces, $nouvelleImage, $genre, $age, $legosaga)
     {
         $req = 'UPDATE table_lego
                 SET lg_nom = '.$nom.',
