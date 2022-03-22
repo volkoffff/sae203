@@ -11,17 +11,16 @@
 	    <?php
 	        require '../lib_crud.inc.php';
 	
-	        $id=$_POST['num'];
-	        $titre=$_POST['titre'];
+	        $nom=$_POST['nom'];
 	        $prix=$_POST['prix'];
-	        $annee=$_POST['annee'];
-	        $nbPages=$_POST['pages'];
-	        $resume=trim($_POST['resume']);
-	        $auteur=$_POST['auteur'];
+	        $pieces=$_POST['pieces'];
+            $genre=$_POST['genre'];
+            $age=$_POST['age'];
+            $legosaga=$_POST['legosaga'];
 	        var_dump($_POST);
 	        var_dump($_FILES);
 	
-	        $imageType=$_FILES["photo"]["type"];
+	        $imageType=$_FILES["nouvelleimage"]["type"];
 	        if ( ($imageType != "image/png") &&
 	            ($imageType != "image/jpg") &&
 	            ($imageType != "image/jpeg") ) {
@@ -29,10 +28,10 @@
 	                die();
 	        }
 	
-	        $nouvelleImage = date("Y_m_d_H_i_s")."---".$_FILES["photo"]["name"];
+	        $nouvelleImage = date("Y_m_d_H_i_s")."---".$_FILES["nouvelleimage"]["name"];
 	
-	        if(is_uploaded_file($_FILES["photo"]["tmp_name"])) {
-	            if(!move_uploaded_file($_FILES["photo"]["tmp_name"], "../images/uploads/".$nouvelleImage)) {
+	        if(is_uploaded_file($_FILES["nouvelleimage"]["tmp_name"])) {
+	            if(!move_uploaded_file($_FILES["nouvelleimage"]["tmp_name"], "../images/uploads/".$nouvelleImage)) {
 	                echo '<p>Problème avec la sauvegarde de l\'image, désolé...</p>'."\n";
 	                die();
 	            }

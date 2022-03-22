@@ -230,3 +230,35 @@ echo '</table>'."\n";
             echo '</option>'."\n";
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // Génération de la liste des auteurs dans le formulaire de recherche
+    function genererDatalistAuteurs($mabd) {
+        // on sélectionne le nom et prénom de tous les auteurs de la table auteurs
+        $req = "SELECT auteur_nom, auteur_prenom FROM auteurs";
+        try {
+            $resultat = $mabd->query($req);
+        } catch (PDOException $e) {
+            // s'il y a une erreur, on l'affiche
+            echo '<p>Erreur : ' . $e->getMessage() . '</p>';
+            die();
+        }
+        // pour chaque auteur, on met son nom et prénom dans une balise <option>
+        foreach ($resultat as $value) {
+            echo '<option value="'.$value=['lego_nom'].'">'."\n"; 
+        } 
+    }

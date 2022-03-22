@@ -3,6 +3,28 @@
     require 'requiere/navbar.php';
 ?>
 <div class="img_hero">
+
+<input type="search" id="real" list="auteurs" autocomplete="off" />
+<datalist id="auteurs">
+
+<form action="" method="POST">
+        <input type="search" id="real" list="boite" autocomplete="off" />
+            <datalist id="boite">
+                <?php
+                    // On va afficher ici la datalist
+                    require 'lib_crud.inc.php';
+                    $co=connexionBD();
+                    genererDatalistAuteurs($co);
+                    deconnexionBD($co);
+                ?>
+            </datalist>
+        <input type="submit" name="chercher !" />
+</form>
+
+
+
+
+</datalist>
     <div class="ma4">
         <form action="form_recherche.php" class="ma5" method="GET" data-parsley-validate>
             <label class="qform" for="saga">Choisissez une cathégorie:</label>
