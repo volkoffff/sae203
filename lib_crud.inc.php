@@ -172,7 +172,6 @@ echo '</table>'."\n";
     }
 
 
-    ...
     // fonction d'effacement d'une BD
     function effacerBD($mabd, $id) {
         $req = 'DELETE FROM table_lego where lg_id='.$id;
