@@ -236,7 +236,33 @@ echo '</table>'."\n";
 
 
 
-
+	// fonction de modification d'une BD dans la table bande_dessinees
+    function modifierBD($mabd ,$id , $co, $nom, $prix,  $pieces, $nouvelleImage, $genre, $age, $legosaga)
+    {
+        $req = 'UPDATE table_lego
+                SET lg_nom = '.$nom.',
+                    lg_prix = '.$prix.',
+                    lg_pieces = '.$pieces.',
+                    lg_image = '.$nouvelleImage.',
+                    lg_genre = '.$genre.',
+                    lg_age = '.$age.',
+                    lg_saga = '.$legosaga.',
+                WHERE bd_id='.$id;
+        echo '<p>' . $req . '</p>' . "\n";
+        try {
+            $resultat = $mabd->query($req);
+        } catch (PDOException $e) {
+            // s'il y a une erreur, on l'affiche
+            echo '<p>Erreur : ' . $e->getMessage() . '</p>';
+            die();
+        }
+        if ($resultat->rowCount() == 1) {
+            echo '<p>La boite de lego ' . $nom . ' a été modifiée.</p>' . "\n";
+        } else {
+            echo '<p>Erreur lors de la modification.</p>' . "\n";
+            die();
+        }
+    }
 
 
 
