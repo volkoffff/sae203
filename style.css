@@ -740,7 +740,9 @@ form {
 
 
 
-
+body {
+    background-color: yellow;
+}
 
 thead tr {
     background-color: red;
