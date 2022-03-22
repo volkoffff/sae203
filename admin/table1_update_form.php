@@ -33,7 +33,7 @@
 	        <?php
 	            require '../lib_crud.inc.php';
 	            $co=connexionBD();
-	            afficherAuteursOptions($co, $boite['_sg_id']);
+	            afficherAuteursOptionsSelectionne($co, $boite['_sg_id']);
 	            deconnexionBD($co);
 	        ?>
         </select><br />
