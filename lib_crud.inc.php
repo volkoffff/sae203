@@ -194,7 +194,7 @@ echo '</table>'."\n";
 
     // fonction de récupération des informations d'une BD
     function getBD($mabd, $idAlbum) {
-        $req = 'SELECT * FROM table_lego where bd_id='.$idAlbum;
+        $req = 'SELECT * FROM table_lego where bd_id='.$idlego;
         echo '<p>GetBD() : '.$req.'</p>'."\n";
         try {
             $resultat = $mabd->query($req);
@@ -211,8 +211,8 @@ echo '</table>'."\n";
 
 	// afficher le "bon" auteur parmi les auteurs (prénom et nom)
    // dans les balises "<option>"
-	function afficherAuteursOptionsSelectionne($mabd, $idAuteur) {
-        $req = "SELECT * FROM lg_id";
+	function afficherAuteursOptionsSelectionne($mabd, $idlego) {
+        $req = "SELECT * FROM table_saga";
         try {
             $resultat = $mabd->query($req);
         } catch (PDOException $e) {
@@ -222,7 +222,7 @@ echo '</table>'."\n";
         }
         foreach ($resultat as $value) {
             echo '<option value="'.$value['sg_id'].'"';
-            if ($value['sg_id']==$idAuteur) {
+            if ($value['sg_id']==$idlego) {
                 echo ' selected="selected"';
             }
             echo '>';
