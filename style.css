@@ -750,14 +750,14 @@ form {
     display: flex;
 }
 .scb input{
-    width: 8rem;
+    width: 7rem;
     border: 2px solid var(--white);
     background-color: var(--white);
     color: white;
     font-size: 1.1rem;
 }
 #real {
-    width: 25vw;
+    width: 15rem;
     height: 2.8rem;
     background-color: #ffffff;
     
