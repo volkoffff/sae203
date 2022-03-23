@@ -18,6 +18,7 @@
         <input type="submit" value="chercher !" />
 </form>
 
+</div>
 
 
 
@@ -60,6 +61,7 @@
         </form>        
     </div>
 </div> -->
+<div class="arnaque"></div>
 <?php
     require 'requiere/footer.php';
     require 'requiere/fin.php';
