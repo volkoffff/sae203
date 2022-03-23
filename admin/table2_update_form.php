@@ -36,7 +36,7 @@
 	        photo de la couleur : <select name="nouvelleimage2" required> <br/>
             <?php
                 $co=connexionBD();
-	            afficherAuteursOptionsSelectionne3($co, $boite['sg_id']);
+	            afficherAuteursOptionsSelectionne3($co, $saga['sg_id']);
 	            deconnexionBD($co);
             ?>
             </select></br >
