@@ -491,7 +491,7 @@ echo '</table>'."\n";
         $req = 'UPDATE table_saga
                 SET sg_nom = "'.$nouvelleImage.'",
                     sg_genre = '.$genre.',
-                    sg_couleur = '.$nouvelleImage2.'
+                    sg_couleur = "'.$nouvelleImage2.'"
                 WHERE sg_id='.$id;
         echo '<p>' . $req . '</p>' . "\n";
         try {
