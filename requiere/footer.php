@@ -9,11 +9,5 @@
             <li><a href="#"><i class="fa fa-youtube"></i></a></li>
             <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
         </ul>
-        <?php
-                $nb=trim(file_get_contents('comptage/mon_compteur.txt'));
-                $nb++;
-                echo $nb. ' visiteurs sur notre site.'. "\n";
-                file_put_contents('comptage/mon_compteur.txt',$nb, LOCK_EX);
-        ?>
     </div>
 </footer>

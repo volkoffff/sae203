@@ -14,7 +14,7 @@
         $id=$_GET['num'];
         $co=connexionBD();
         $saga=getBD2($co, $id);
-        var_dump($boite);
+        var_dump($saga);
         deconnexionBD($co);
     ?>
 	    <form action="table2_update_valide.php" method="POST" enctype="multipart/form-data">
