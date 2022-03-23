@@ -737,12 +737,17 @@ form {
 
 
 
-clarecherche {
+.clarecherche {
     top: 15rem;
     position: absolute;
 }
-
-
+.scb {
+    display: flex;
+}
+.scb input{
+    width: 10rem;
+    
+}
 
 
 

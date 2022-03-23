@@ -4,7 +4,7 @@
 ?>
 <div class="img_hero">
     <div class="clarecherche">
-        <form action="reponse_recherche.php" method="POST">
+        <form class="scb" action="reponse_recherche.php" method="POST">
             <input type="search" name="nom" id="real" list="boite" />
                 <datalist id="boite">
                     <?php
