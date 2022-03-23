@@ -12,13 +12,7 @@
 	        photo de la saga : <input type="file" name="nouvelleimage" required> <br/>
 	        genre : <input type="number" name="prix" min="0"  required /><br />
 	        photo de la couleur : <input type="file" name="nouvelleimage" required> <br/>
-	        logo de la licence lego : <select name="legosaga">        
-	        <?php
-	            require '../lib_crud.inc.php';
-	            $co=connexionBD();
-	            afficherAuteursOptions($co,);
-	            deconnexionBD($co);
-	        ?>
+
 	        </select><br />
 	        <input type="submit" value="Ajouter" />
 	    </form>

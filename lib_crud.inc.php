@@ -356,7 +356,6 @@ $resultat = $mabd->query($req);
 echo '<p>Erreur : ' . $e->getMessage() . '</p>';
 die();
 }
-foreach ($resultat as $value) {
 echo '<table>'."\n";
 echo '<thead><tr><th>Photo de la saga</th><th>genre</th><th>photo de la couleur</th><th>modifier</th><th>modifier</th></tr></thead>'."\n";
 echo '<tbody>'."\n";
@@ -372,7 +371,6 @@ echo '</tr>'."\n";
 echo '</tbody>'."\n";
 echo '</table>'."\n";
 
-}
 
     // on se déconnexte en mettant la variable de connexion à null 
     $mabd=null;
