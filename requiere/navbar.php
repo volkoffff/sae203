@@ -10,8 +10,8 @@
                       <li class="nav-item"><a href="admin/admin.php" class="nav-link">privé <span></span></a></li>
                       <li class="nav-item"><a href="#" class="nav-link">
                             <div class="search-box">
-                            <form class="scb" action="reponse_recherche.php" method="POST">
-                                    <input type="search" name="nom" id="real" list="boite" />
+                            <form class="scb search-box" action="reponse_recherche.php" method="POST">
+                                    <input class="input-search" type="search" name="nom" id="real" list="boite" />
                                         <datalist id="boite">
                                              <?php
                                                 // On va afficher ici la datalist
@@ -30,7 +30,7 @@
                             </div>
                         </a>
                       </li>
-                      class="search-box"
+                      
                   </ul>
                   </div>
                   <div class="menu-btn">
