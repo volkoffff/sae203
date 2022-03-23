@@ -33,7 +33,13 @@
 	            deconnexionBD($co);
             ?>
             </select></br >
-	        photo de la couleur : <input type="file" name="nouvelleimage2" required> <br/>
+	        photo de la couleur : <select name="nouvelleimage2" required> <br/>
+            <?php
+                $co=connexionBD();
+	            afficherAuteursOptionsSelectionne3($co, $boite['sg_id']);
+	            deconnexionBD($co);
+            ?>
+            </select></br >
 
         <input type="submit" value="Modifier" />
     </form>

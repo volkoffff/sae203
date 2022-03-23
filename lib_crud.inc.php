@@ -461,3 +461,25 @@ echo '</table>'."\n";
     }
 }
 
+
+	// afficher le "bon" auteur parmi les auteurs (prénom et nom)
+   // dans les balises "<option>"
+   function afficherAuteursOptionsSelectionne2($mabd, $idsaga) {
+    $req = "SELECT * FROM table_saga group by sg_couleur";
+    try {
+        $resultat = $mabd->query($req);
+    } catch (PDOException $e) {
+        // s'il y a une erreur, on l'affiche
+        echo '<p>Erreur : ' . $e->getMessage() . '</p>';
+        die();
+    }
+    foreach ($resultat as $value) {
+        echo '<option value="'.$value['sg_id'].'"';
+        if ($value['sg_id']==$idsaga) {
+            echo ' selected="selected"';
+        }
+        echo '>';
+        echo $value['sg_couleur'];
+        echo '</option>'."\n";
+    }
+}
