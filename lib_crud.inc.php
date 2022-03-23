@@ -341,3 +341,39 @@ function afficherResultatRecherche($mabd) {
     echo '</div>';
     echo '<div class="arnaque"></div>';
 }
+
+
+
+
+
+//afficher liste pour gérer la bdd
+function afficherListe($mabd) {
+    $req = "SELECT * FROM table_saga
+try {
+$resultat = $mabd->query($req);
+} catch (PDOException $e) {
+// s'il y a une erreur, on l'affiche
+echo '<p>Erreur : ' . $e->getMessage() . '</p>';
+die();
+}
+foreach ($resultat as $value) {
+echo '<table>'."\n";
+echo '<thead><tr><th>Photo de la saga</th><th>genre</th><th>Photo de la couleur</th></tr></thead>'."\n";
+echo '<tbody>'."\n";
+foreach ($resultat as $value) {
+echo '<tr>'."\n";
+echo '<td><img class="photo" src="../images/uploads/'.$value['lg_nom'].'".png"" width=140px" </td>'."\n";
+echo '<td>'.$value['sg_genre'].'</td>'."\n";
+echo '<td><img class="photo" src="../images/uploads/'.$value['lg_couleur'].'".png"" width=140px" </td>'."\n";
+echo '<td><a href="table1_update_form.php?num='.$value['lg_id'].'">Modifier</a></td>'."\n";
+echo '<td><a href="table1_delete.php?num='.$value['lg_id'].'">Supprimer</a></td>'."\n";
+echo '</tr>'."\n";
+}
+echo '</tbody>'."\n";
+echo '</table>'."\n";
+
+}
+
+    // on se déconnexte en mettant la variable de connexion à null 
+    $mabd=null;
+}

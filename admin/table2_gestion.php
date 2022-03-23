@@ -12,12 +12,12 @@
         <div class="tktclehaut">
         <h1>Gestion des données</h1>
 
-        <p><a href="table1_new_form.php">Ajouter une boite de légo</a></p>
+        <p><a href="table2_new_form.php">Ajouter une saga</a></p>
         </div>
         <?php
             require '../lib_crud.inc.php';
             $co=connexionBD();
-            afficherListe($co);
+            afficherListe2($co);
             deconnexionBD($co);
         ?>
     </body>
