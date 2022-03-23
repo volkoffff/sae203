@@ -422,7 +422,7 @@ echo '</table>'."\n";
 	// afficher le "bon" auteur parmi les auteurs (prénom et nom)
    // dans les balises "<option>"
    function afficherAuteursOptionsSelectionne2($mabd, $idlego) {
-    $req = "SELECT * FROM table_saga";
+    $req = "SELECT sg_id,unique(sg_genre) FROM table_saga";
     try {
         $resultat = $mabd->query($req);
     } catch (PDOException $e) {
