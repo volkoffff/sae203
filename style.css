@@ -809,3 +809,8 @@ form {
     left: 50%;
     transform: translate(-50%);
 }
+.orgmod {
+    display: flex;
+    flex-direction: column;
+    
+}
