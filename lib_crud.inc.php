@@ -348,8 +348,7 @@ function afficherResultatRecherche($mabd) {
 
 //afficher liste pour gérer la bdd
 function afficherListe2($mabd) {
-    $req = "SELECT * FROM table_lego 
-    INNER JOIN table_saga ON table_lego._sg_id = table_saga.sg_id";
+    $req = "SELECT * FROM table_lego"; 
 try {
 $resultat = $mabd->query($req);
 } catch (PDOException $e) {
@@ -359,7 +358,7 @@ die();
 }
 foreach ($resultat as $value) {
 echo '<table>'."\n";
-echo '<thead><tr><th>Photo de la saga</th><th>genre</th><th>photo de la couleur</th><th>modifier</th><th>suprimer</th></tr></thead>'."\n";
+echo '<thead><tr><th>Photo de la saga</th><th>genre</th><th>photo de la couleur</th><th>modifier</th><th>modifier</th></tr></thead>'."\n";
 echo '<tbody>'."\n";
 foreach ($resultat as $value) {
 echo '<tr>'."\n";
