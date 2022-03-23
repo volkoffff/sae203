@@ -489,9 +489,9 @@ echo '</table>'."\n";
     function modifierBD2($co, $id, $nouvelleImage, $genre, $nouvelleImage2)
     {
         $req = 'UPDATE table_saga
-                SET sg_nom = "'.$nom.'",
-                    sg_genre = '.$prix.',
-                    sg_couleur = '.$pieces.',
+                SET sg_nom = "'.$nouvelleImage.'",
+                    sg_genre = '.$genre.',
+                    sg_couleur = '.$nouvelleImage2.'
                 WHERE sg_id='.$id;
         echo '<p>' . $req . '</p>' . "\n";
         try {
