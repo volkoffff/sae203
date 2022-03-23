@@ -362,7 +362,7 @@ echo '<thead><tr><th>Photo de la saga</th><th>genre</th><th>photo de la couleur<
 echo '<tbody>'."\n";
 foreach ($resultat as $value) {
 echo '<tr>'."\n";
-echo '<td><img class="photo" src="../images/uploads/'.$value['sg_nom'].'.png" width=140px" </td>'."\n";
+echo '<td><img class="photo" src="../images/uploads/'.$value['sg_nom'].'" width=140px" </td>'."\n";
 echo '<td>'.$value['sg_genre'].'</td>'."\n";
 echo '<td><img class="photo" src="../images/uploads/'.$value['sg_couleur'].'" width=140px" </td>'."\n";
 echo '<td><a href="table1_update_form.php?num='.$value['sg_id'].'">Modifier</a></td>'."\n";
