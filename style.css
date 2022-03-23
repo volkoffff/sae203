@@ -812,5 +812,9 @@ form {
 .orgmod {
     display: flex;
     flex-direction: column;
-    
+
+}
+.orgmod ee {
+    display: flex;
+    flex-direction: row;
 }
