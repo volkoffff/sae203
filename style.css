@@ -777,4 +777,6 @@ form {
     margin: auto;
     position: relative;
     margin: 1rem 1rem;
+    left: 50%;
+    transform: translate(-50%);
 }
