@@ -740,6 +740,9 @@ form {
 .clarecherche {
     top: 15rem;
     position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 }
 .scb {
     display: flex;

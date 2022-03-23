@@ -4,6 +4,7 @@
 ?>
 <div class="img_hero">
     <div class="clarecherche">
+    <h1>Recherchez le légo de vos rève parmis notre liste</h1>    
         <form class="scb" action="reponse_recherche.php" method="POST">
             <input type="search" name="nom" id="real" list="boite" />
                 <datalist id="boite">
