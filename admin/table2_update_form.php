@@ -28,12 +28,6 @@
             ?>
             </select></br >
 	        photo de la couleur : <input type="file" name="nouvelleimage2" required> <br/>
-            <?php
-                $co=connexionBD();
-	            afficherAuteursOptionsSelectionne3($co, $saga['sg_id']);
-	            deconnexionBD($co);
-            ?>
-            </select></br >
 
         <input type="submit" value="Modifier" />
     </form>
