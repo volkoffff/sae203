@@ -419,9 +419,29 @@ echo '</table>'."\n";
     }
 
 
+
+
+    // fonction de récupération des informations d'une BD
+    function getBD2($mabd, $idsaga) {
+        $req = 'SELECT * FROM table_saga where sg_id='.$idsaga;
+        echo '<p>GetBD() : '.$req.'</p>'."\n";
+        try {
+            $resultat = $mabd->query($req);
+        } catch (PDOException $e) {
+            // s'il y a une erreur, on l'affiche
+            echo '<p>Erreur : ' . $e->getMessage() . '</p>';
+            die();
+        }
+        // la fonction retourne le tableau associatif 
+        // contenant les champs et leurs valeurs
+        return $resultat->fetch();
+    }
+
+
+
 	// afficher le "bon" auteur parmi les auteurs (prénom et nom)
    // dans les balises "<option>"
-   function afficherAuteursOptionsSelectionne2($mabd, $idlego) {
+   function afficherAuteursOptionsSelectionne2($mabd, $idsaga) {
     $req = "SELECT * FROM table_saga group by sg_genre";
     try {
         $resultat = $mabd->query($req);
@@ -432,7 +452,7 @@ echo '</table>'."\n";
     }
     foreach ($resultat as $value) {
         echo '<option value="'.$value['sg_id'].'"';
-        if ($value['sg_id']==$idlego) {
+        if ($value['sg_id']==$idsaga) {
             echo ' selected="selected"';
         }
         echo '>';

@@ -13,7 +13,7 @@
 
         $id=$_GET['num'];
         $co=connexionBD();
-        $boite=getBD($co, $id);
+        $boite=getBD2($co, $id);
         var_dump($boite);
         deconnexionBD($co);
     ?>
