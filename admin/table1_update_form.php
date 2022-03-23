@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>SAE203</title>
-</head>
-<body style="font-family:sans-serif;">
+<?php
+ require 'requiere/header.php';
+?>
     <a href="../index.php">Accueil</a> | <a href="table1_gestion.php">Gestion</a>
 	<hr>
     <h1>Modifier une bande dessinée</h1>
