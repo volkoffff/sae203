@@ -19,7 +19,7 @@
     ?>
 	    <form action="table2_update_valide.php" method="POST" enctype="multipart/form-data">
             <input type="hidden" name="num" value="<?php echo $id; ?>" />
-            logo de la licence lego : <select name="legosaga">        
+            logo de la licence lego : <select name="nouvelleimage">        
 	            <?php
 	                $co=connexionBD();
 	                afficherAuteursOptionsSelectionne($co, $saga['sg_id']);

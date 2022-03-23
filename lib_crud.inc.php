@@ -483,3 +483,28 @@ echo '</table>'."\n";
         echo '</option>'."\n";
     }
 }
+
+
+	// fonction de modification d'une BD dans la table bande_dessinees
+    function modifierBD2($co, $id, $nouvelleImage, $genre, $nouvelleImage2)
+    {
+        $req = 'UPDATE table_saga
+                SET sg_nom = "'.$nom.'",
+                    sg_genre = '.$prix.',
+                    sg_couleur = '.$pieces.',
+                WHERE sg_id='.$id;
+        echo '<p>' . $req . '</p>' . "\n";
+        try {
+            $resultat = $co->query($req);
+        } catch (PDOException $e) {
+            // s'il y a une erreur, on l'affiche
+            echo '<p>Erreur : ' . $e->getMessage() . '</p>';
+            die();
+        }
+        if ($resultat->rowCount() == 1) {
+            echo '<p>La saga a été modifiée.</p>' . "\n";
+        } else {
+            echo '<p>Erreur lors de la modification.</p>' . "\n";
+            die();
+        }
+    }
