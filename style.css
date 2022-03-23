@@ -743,6 +743,7 @@ form {
     width: 100vw;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 .scb {
     display: flex;
