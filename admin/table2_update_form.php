@@ -13,7 +13,7 @@
 
         $id=$_GET['num'];
         $co=connexionBD();
-        $boite=getBD2($co, $id);
+        $saga=getBD2($co, $id);
         var_dump($boite);
         deconnexionBD($co);
     ?>
@@ -22,14 +22,14 @@
             logo de la licence lego : <select name="legosaga">        
 	            <?php
 	                $co=connexionBD();
-	                afficherAuteursOptionsSelectionne($co, $boite['_sg_id']);
+	                afficherAuteursOptionsSelectionne($co, $saga['sg_id']);
 	                deconnexionBD($co);
 	            ?>
             </select><br />
 	        genre : <select type="text" name="genre"  required /><br />
             <?php
                 $co=connexionBD();
-	            afficherAuteursOptionsSelectionne2($co, $boite['_sg_id']);
+	            afficherAuteursOptionsSelectionne2($co, $saga['sg_id']);
 	            deconnexionBD($co);
             ?>
             </select></br >
