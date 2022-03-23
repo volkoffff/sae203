@@ -741,6 +741,13 @@ form {
 
 
 
-thead tr {
-    background-color: red;
-}
+table {
+    background-image: grey;
+    font-family: 'Roboto', sans-serif;
+  }
+  thead {
+    background-color: #2e351a; 
+  }
+  thead tr {
+    color: white;
+  }
