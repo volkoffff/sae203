@@ -417,3 +417,27 @@ echo '</table>'."\n";
             die();
         }
     }
+
+
+	// afficher le "bon" auteur parmi les auteurs (prénom et nom)
+   // dans les balises "<option>"
+   function afficherAuteursOptionsSelectionne2($mabd, $idlego) {
+    $req = "SELECT * FROM table_saga";
+    try {
+        $resultat = $mabd->query($req);
+    } catch (PDOException $e) {
+        // s'il y a une erreur, on l'affiche
+        echo '<p>Erreur : ' . $e->getMessage() . '</p>';
+        die();
+    }
+    foreach ($resultat as $value) {
+        echo '<option value="'.$value['sg_id'].'"';
+        if ($value['sg_id']==$idlego) {
+            echo ' selected="selected"';
+        }
+        echo '>';
+        echo $value['sg_nom'];
+        echo '</option>'."\n";
+    }
+}
+
