@@ -347,8 +347,9 @@ function afficherResultatRecherche($mabd) {
 
 
 //afficher liste pour gérer la bdd
-function afficherListe($mabd) {
-    $req = "SELECT * FROM table_saga
+function afficherListe2($mabd) {
+    $req = "SELECT * FROM table_lego 
+    INNER JOIN table_saga ON table_lego._sg_id = table_saga.sg_id";
 try {
 $resultat = $mabd->query($req);
 } catch (PDOException $e) {
@@ -358,13 +359,13 @@ die();
 }
 foreach ($resultat as $value) {
 echo '<table>'."\n";
-echo '<thead><tr><th>Photo de la saga</th><th>genre</th><th>Photo de la couleur</th></tr></thead>'."\n";
+echo '<thead><tr><th>Photo de la saga</th><th>genre</th><th>photo de la couleur</th></tr></thead>'."\n";
 echo '<tbody>'."\n";
 foreach ($resultat as $value) {
 echo '<tr>'."\n";
-echo '<td><img class="photo" src="../images/uploads/'.$value['lg_nom'].'".png"" width=140px" </td>'."\n";
+echo '<td><img class="photo" src="../images/uploads/'.$value['sg_nom'].'" width=140px" </td>'."\n";
 echo '<td>'.$value['sg_genre'].'</td>'."\n";
-echo '<td><img class="photo" src="../images/uploads/'.$value['lg_couleur'].'".png"" width=140px" </td>'."\n";
+echo '<td><img class="photo" src="../images/uploads/'.$value['sg_couleur'].'" width=140px" </td>'."\n";
 echo '<td><a href="table1_update_form.php?num='.$value['lg_id'].'">Modifier</a></td>'."\n";
 echo '<td><a href="table1_delete.php?num='.$value['lg_id'].'">Supprimer</a></td>'."\n";
 echo '</tr>'."\n";
