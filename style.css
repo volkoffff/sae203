@@ -816,5 +816,5 @@ form {
 }
 .ee {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
