@@ -464,7 +464,7 @@ echo '</table>'."\n";
 
 	// afficher le "bon" auteur parmi les auteurs (prénom et nom)
    // dans les balises "<option>"
-   function afficherAuteursOptionsSelectionne2($mabd, $idsaga) {
+   function afficherAuteursOptionsSelectionne3($mabd, $idsaga) {
     $req = "SELECT * FROM table_saga group by sg_couleur";
     try {
         $resultat = $mabd->query($req);
