@@ -114,7 +114,7 @@ echo '<td>'.$value['lg_pieces'].'</td>'."\n";
 echo '<td>'.$value['lg_genre'].'</td>'."\n";
 echo '<td>'.$value['lg_age'].'</td>'."\n";
 echo '<td><a href="table1_update_form.php?num='.$value['lg_id'].'">Modifier</a></td>'."\n";
-echo '<td><a href="table1_delete.php?num='.$value['lg_id'].'">Supprimer</a></td>'."\n";
+echo '<td><a href="table1_delete.php?num='.$value['lg_id'].'" text-decoration: underline" >Supprimer</a></td>'."\n";
 echo '</tr>'."\n";
 }
 echo '</tbody>'."\n";

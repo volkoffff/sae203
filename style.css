@@ -741,11 +741,7 @@ form {
 
 
 
-table {
-    background-image: grey;
-    font-family: 'Roboto', sans-serif;
-    color: black;
-  }
+
   thead {
     background-color: #2e351a; 
   }
@@ -757,6 +753,7 @@ table {
     border-spacing: 0;
     margin: auto;
     position: relative;
+    font-family: 'Roboto', sans-serif;
   }
   th,
   td {
