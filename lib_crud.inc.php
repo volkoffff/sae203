@@ -398,3 +398,22 @@ echo '</table>'."\n";
          die();
      }
  }
+
+     // fonction d'effacement d'une BD
+     function effacerBD2($mabd, $id) {
+        $req = 'DELETE FROM table_saga where sg_id='.$id;
+        echo '<p>'.$req.'</p>'."\n";
+        try{
+            $resultat = $mabd->query($req);
+        } catch (PDOException $e) {
+            // s'il y a une erreur, on l'affiche
+            echo '<p>Erreur : ' . $e->getMessage() . '</p>';
+            die();
+        }
+        if ($resultat->rowCount()==1) {
+            echo '<p>La bande saga '.$id.' a été supprimée du catalogue.</p>'."\n";
+        } else {
+            echo '<p>Erreur lors de la suppression.</p>'."\n";
+            die();
+        }
+    }
