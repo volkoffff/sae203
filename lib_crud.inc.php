@@ -359,7 +359,7 @@ die();
 }
 foreach ($resultat as $value) {
 echo '<table>'."\n";
-echo '<thead><tr><th>Photo de la saga</th><th>genre</th><th>photo de la couleur</th></tr></thead>'."\n";
+echo '<thead><tr><th>Photo de la saga</th><th>genre</th><th>photo de la couleur</th><th>modifier</th><th>suprimer</th></tr></thead>'."\n";
 echo '<tbody>'."\n";
 foreach ($resultat as $value) {
 echo '<tr>'."\n";
