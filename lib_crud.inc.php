@@ -107,7 +107,7 @@ echo '<thead><tr><th>Photo</th><th>Nom lego</th><th>Prix (&euro;)</th><th>Pieces
 echo '<tbody>'."\n";
 foreach ($resultat as $value) {
 echo '<tr>'."\n";
-echo '<td><img class="photo" src="../images/uploads/'.$value['lg_image'].'" width=100px" </td>'."\n";
+echo '<td><img class="photo" src="../images/uploads/'.$value['lg_image'].'" width=140px" </td>'."\n";
 echo '<td>'.$value['lg_nom'].'</td>'."\n";
 echo '<td>'.$value['lg_prix'].'</td>'."\n";
 echo '<td>'.$value['lg_pieces'].'</td>'."\n";
