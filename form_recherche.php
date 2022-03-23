@@ -1,23 +1,23 @@
 <?php
     require 'requiere/header.php';
-   // require 'requiere/navbar.php';
+    require 'requiere/navbar.php';
 ?>
 <div class="img_hero">
-
-<form action="reponse_recherche.php" method="POST">
-        <input type="search" name="nom" id="real" list="boite" />
-            <datalist id="boite">
-                <?php
+    <div class="clarecherche">
+        <form action="reponse_recherche.php" method="POST">
+            <input type="search" name="nom" id="real" list="boite" />
+                <datalist id="boite">
+                    <?php
                     // On va afficher ici la datalist
                     require 'lib_crud.inc.php';
                     $co=connexionBD();
                     genererDatalistAuteurs($co);
                     deconnexionBD($co);
-                ?>
-            </datalist>
-        <input type="submit" value="chercher !" />
-</form>
-
+                    ?>
+                </datalist>
+            <input type="submit" value="chercher !" />
+        </form>
+    </div>
 </div>
 
 
@@ -61,7 +61,6 @@
         </form>        
     </div>
 </div> -->
-<div class="arnaque"></div>
 <?php
     require 'requiere/footer.php';
     require 'requiere/fin.php';
