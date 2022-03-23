@@ -773,3 +773,8 @@ form {
   td:first-child {
     border-left: 1px solid #cecfd5;
   }
+.tktclehaut {
+    margin: auto;
+    position: relative;
+    margin: 1rem 1rem;
+}
