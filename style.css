@@ -759,12 +759,13 @@ form {
 #real {
     width: 25vw;
     height: 2.8rem;
-    background-color: #ebebec;
+    background-color: #ffffff;
     
 }
 .clarecherche h1 {
     font-size: 1.4rem;
     font-weight: 400;
+    margin-bottom: 1rem;
 }
 
 
