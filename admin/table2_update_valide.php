@@ -11,7 +11,7 @@
 	    <?php
 	        require '../lib_crud.inc.php';
 	
-            
+            $id=$_POST['num'];
             $genre=$_POST['genre'];
 	        var_dump($_POST);
 	        var_dump($_FILES);
