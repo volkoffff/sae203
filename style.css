@@ -755,6 +755,8 @@ table {
   table {
     border-collapse: separate;
     border-spacing: 0;
+    left: 50%;
+    transform: translate(-50%);
   }
   th,
   td {
@@ -765,7 +767,7 @@ table {
     color: #fff;
   }
   tbody tr:nth-child(even) {
-    background: #f0f0f2;
+    background: #ebebec;
   }
   td {
     border-bottom: 1px solid #cecfd5;
