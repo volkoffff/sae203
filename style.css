@@ -809,12 +809,21 @@ form {
     left: 50%;
     transform: translate(-50%);
 }
+
 .orgmod {
     display: flex;
     flex-direction: column;
-
+    width: 40vw;
+    margin: auto;
+    background-color: #ffffff;
 }
 .ee {
     display: flex;
     flex-direction: column;
+}
+.ee span {
+    margin-bottom: 7px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-left: 5px;
 }

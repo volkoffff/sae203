@@ -195,7 +195,6 @@ echo '</table>'."\n";
     // fonction de récupération des informations d'une BD
     function getBD($mabd, $idlego) {
         $req = 'SELECT * FROM table_lego where lg_id='.$idlego;
-        echo '<p>GetBD() : '.$req.'</p>'."\n";
         try {
             $resultat = $mabd->query($req);
         } catch (PDOException $e) {
