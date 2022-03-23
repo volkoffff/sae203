@@ -827,3 +827,10 @@ form {
     text-transform: uppercase;
     margin-left: 5px;
 }
+
+.ee input {
+    height: 2.8rem;
+    background-color: #ffffff;
+    color: black;
+    padding-left: 0.6rem;
+}
