@@ -59,7 +59,7 @@
 	        }
 	
 	        $co=connexionBD();
-	        ajouterBD2($co, $genre, $nouvelleImage, $nouvelleImage2,);
+	        ajouterBD2($co, $nouvelleImage, $genre, $nouvelleImage2,);
 	        deconnexionBD($co);
 	    ?>
 	</body>

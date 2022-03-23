@@ -379,10 +379,10 @@ echo '</table>'."\n";
 
 
  // fonction d'ajout d'une BD dans la table bande_dessinees
- function ajouterBD2($mabd, $genre, $nouvelleImage, $nouvelleImage2)
+ function ajouterBD2($mabd, $nouvelleImage, $genre, $nouvelleImage2)
  {
-     $req = 'INSERT INTO table_lego(sg_genre,sg_nom, sg_couleur) 
-     VALUES ("'.$genre.'", "'.$nouvelleImage.'" , "'.$nouvelleImage2.'")';
+     $req = 'INSERT INTO table_lego(sg_nom , sg_genre , sg_couleur) 
+     VALUES ( "'.$nouvelleImage.'" ,"'.$genre.'","'.$nouvelleImage2.'")';
      echo '<p>' . $req . '</p>' . "\n";
      try {
          $resultat = $mabd->query($req);
