@@ -817,4 +817,5 @@ form {
 .ee {
     display: flex;
     flex-direction: column;
+    background-color: rebeccapurple;
 }
