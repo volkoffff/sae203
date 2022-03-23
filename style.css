@@ -746,9 +746,10 @@ form {
 }
 .scb input{
     width: 10rem;
-    
 }
-
+#real {
+    width: 25vw;
+}
 
 
 
