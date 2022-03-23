@@ -10,21 +10,9 @@
                       <li class="nav-item"><a href="admin/admin.php" class="nav-link">privé <span></span></a></li>
                       <li class="nav-item"><a href="#" class="nav-link">
                             <div class="search-box">
-                                <button class="btn-search">
+                            <button class="btn-search">
                                 <i class="fas fa-search"></i></button>
-                                <form class="scb" action="reponse_recherche.php" method="POST">
-                                <input type="search" name="nom" id="real" class="input-search" list="boite" placeholder="Type to Search...">
-                                <datalist id="boite">
-                    <?php
-                    // On va afficher ici la datalist
-                    require 'lib_crud.inc.php';
-                    $co=connexionBD();
-                    genererDatalistAuteurs($co);
-                    deconnexionBD($co);
-                    ?>
-                </datalist>
-                                </form>
-                            </div>
+                                <input type="text" class="input-search" placeholder="Type to Search..."></div>
                         </a></li>
 
                   </ul>
