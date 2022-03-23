@@ -436,7 +436,7 @@ echo '</table>'."\n";
             echo ' selected="selected"';
         }
         echo '>';
-        echo $value['sg_nom'];
+        echo $value['sg_couleur'];
         echo '</option>'."\n";
     }
 }

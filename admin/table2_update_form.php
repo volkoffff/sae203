@@ -19,7 +19,13 @@
     ?>
 	    <form action="table2_update_valide.php" method="POST" enctype="multipart/form-data">
             <input type="hidden" name="num" value="<?php echo $id; ?>" />
-            photo de la saga : <input type="file" name="nouvelleimage" required> <br/>
+            logo de la licence lego : <select name="legosaga">        
+	            <?php
+	                $co=connexionBD();
+	                afficherAuteursOptionsSelectionne($co, $boite['_sg_id']);
+	                deconnexionBD($co);
+	            ?>
+            </select><br />
 	        genre : <select type="text" name="genre"  required /><br />
             <?php
                 $co=connexionBD();
@@ -28,13 +34,7 @@
             ?>
             </select></br >
 	        photo de la couleur : <input type="file" name="nouvelleimage2" required> <br/>
-	        logo de la licence lego : <select name="legosaga">        
-	        <?php
-	            $co=connexionBD();
-	            afficherAuteursOptionsSelectionne($co, $boite['_sg_id']);
-	            deconnexionBD($co);
-	        ?>
-        </select><br />
+
         <input type="submit" value="Modifier" />
     </form>
 </body>
