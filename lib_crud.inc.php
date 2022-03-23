@@ -375,3 +375,26 @@ echo '</table>'."\n";
     // on se déconnexte en mettant la variable de connexion à null 
     $mabd=null;
 }
+
+
+
+ // fonction d'ajout d'une BD dans la table bande_dessinees
+ function ajouterBD2($mabd, $genre, $nouvelleImage, $nouvelleImage2)
+ {
+     $req = 'INSERT INTO table_lego(sg_genre,sg_nom, sg_couleur) 
+     VALUES ("'.$genre.'", "'.$nouvelleImage.'" , "'.$nouvelleImage2.'")';
+     echo '<p>' . $req . '</p>' . "\n";
+     try {
+         $resultat = $mabd->query($req);
+     } catch (PDOException $e) {
+         // s'il y a une erreur, on l'affiche
+         echo '<p>Erreur : ' . $e->getMessage() . '</p>';
+         die();
+     }
+     if ($resultat->rowCount() == 1) {
+         echo '<p>La boite saga a été ajoutée au catalogue.</p>' . "\n";
+     } else {
+         echo '<p>Erreur lors de l\'ajout.</p>' . "\n";
+         die();
+     }
+ }
