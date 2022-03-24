@@ -768,7 +768,9 @@ form {
 .clarecherche h1 {
     font-size: 1.2rem;
     font-weight: 300;
-    margin-bottom: 0.8rem;
+    margin-bottom:  0.8rem;
+    padding: 0 0.8rem;
+    
 }
 
 
