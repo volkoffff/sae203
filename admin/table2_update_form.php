@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>SAE203</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body style="font-family:sans-serif;">
     <a href="../index.php">Accueil</a> | <a href="table1_gestion.php">Gestion</a>
