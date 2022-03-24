@@ -14,20 +14,29 @@
         $id=$_GET['num'];
         $co=connexionBD();
         $saga=getBD2($co, $id);
-        var_dump($saga);
+        
         deconnexionBD($co);
     ?>
 	    <form action="table2_update_valide.php" method="POST" enctype="multipart/form-data">
             <input type="hidden" name="num" value="<?php echo $id; ?>" />
-            logo de la licence lego : <input type="file" name="nouvelleimage" required> <br/>      
-	        genre : <select type="text" name="genre"  required /><br />
-            <?php
-                $co=connexionBD();
-	            afficherAuteursOptionsSelectionne2($co, $saga['sg_id']);
-	            deconnexionBD($co);
-            ?>
-            </select></br >
-	        photo de la couleur : <input type="file" name="nouvelleimage2" required> <br/>
+            <div class="ee">
+                <span>logo de la licence lego :</span> 
+                <input type="file" name="nouvelleimage" required> <br/>      
+            </div>
+            <div class="ee">
+                <span>genre :</span> 
+                <select type="text" name="genre"  required /><br />
+                    <?php
+                        $co=connexionBD();
+	                    afficherAuteursOptionsSelectionne2($co, $saga['sg_id']);
+	                    deconnexionBD($co);
+                    ?>
+                </select></br >
+            </div>
+            <div class="ee">
+                <span>photo de la couleur :</span> 
+                <input type="file" name="nouvelleimage2" required> <br/>
+            </div>
 
         <input type="submit" value="Modifier" />
     </form>

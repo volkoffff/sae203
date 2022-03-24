@@ -9,9 +9,20 @@
 	    <h1>Ajouter une saga</h1>
 	    <hr />
 	    <form action="table2_new_valide.php" method="POST" enctype="multipart/form-data">
-	        photo de la saga : <input type="file" name="nouvelleimage" required> <br/>
-	        genre : <input type="text" name="genre"  required /><br />
-	        photo de la couleur : <input type="file" name="nouvelleimage2" required> <br/>
+			<div class="ee">
+				<span>photo de la saga :</span>
+			</div>
+			<div class="ee">
+				<input type="file" name="nouvelleimage" required> <br/>
+			</div>
+			<div class="ee">	
+				<span>genre :</span>
+				<input type="text" name="genre"  required /><br />
+			</div>
+			<div class="ee">
+	        	<span>photo de la couleur :</span>
+				<input type="file" name="nouvelleimage2" required> <br/>
+			</div>
 	        <input type="submit" value="Ajouter" />
 	    </form>
 	</body>

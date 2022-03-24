@@ -423,7 +423,6 @@ echo '</table>'."\n";
     // fonction de récupération des informations d'une BD
     function getBD2($mabd, $idsaga) {
         $req = 'SELECT * FROM table_saga where sg_id='.$idsaga;
-        echo '<p>GetBD() : '.$req.'</p>'."\n";
         try {
             $resultat = $mabd->query($req);
         } catch (PDOException $e) {
