@@ -9,7 +9,7 @@
 	    <hr />
 	    <h1>Ajouter une boite de lego</h1>
 	    <hr />
-	    <form action="table1_new_valide.php" method="POST" enctype="multipart/form-data">
+	    <form action="table1_new_valide.php" class="orgmod" method="POST" enctype="multipart/form-data">
 			<div class="ee">
 	        	<span>nom :</span> 
 				<input type="text" name="nom" required /><br />
@@ -47,8 +47,9 @@
 					?>
 	        		</select>
 					<br />
-	        	<input type="submit" value="Ajouter" />
 			</div>
+	        	<input type="submit" value="Ajouter" />
+			
 	    </form>
 			
 	</body>
