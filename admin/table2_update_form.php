@@ -18,7 +18,7 @@
         
         deconnexionBD($co);
     ?>
-	    <form action="table2_update_valide.php" method="POST" enctype="multipart/form-data">
+	    <form action="table2_update_valide.php" class="orgmod" method="POST" enctype="multipart/form-data">
             <input type="hidden" name="num" value="<?php echo $id; ?>" />
             <div class="ee">
                 <span>logo de la licence lego :</span> 

@@ -9,7 +9,7 @@
 	    <hr />
 	    <h1>Ajouter une saga</h1>
 	    <hr />
-	    <form action="table2_new_valide.php" method="POST" enctype="multipart/form-data">
+	    <form action="table2_new_valide.php" class="orgmod" method="POST" enctype="multipart/form-data">
 			<div class="ee">
 				<span>photo de la saga :</span>
 			</div>
