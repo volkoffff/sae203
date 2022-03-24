@@ -755,6 +755,7 @@ form {
     background-color: var(--white);
     color: white;
     font-size: 1.1rem;
+    cursor: pointer;
 }
 #real {
     width: 15rem;
@@ -847,4 +848,11 @@ form {
     border-radius: 4px;
     border-style: none;
     border: solid 1px grey;
+}
+.btvvalid {
+    width: 7rem;
+    border: 2px solid var(--white);
+    background-color: var(--white);
+    color: white;
+    font-size: 1.1rem;
 }

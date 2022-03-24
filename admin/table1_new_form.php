@@ -48,7 +48,7 @@
 	        		</select>
 					<br />
 			</div>
-	        	<input type="submit" value="Ajouter" />
+	        	<input type="submit" class="btvvalid" value="Ajouter" />
 			
 	    </form>
 			

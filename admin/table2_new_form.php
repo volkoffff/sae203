@@ -24,7 +24,7 @@
 	        	<span>photo de la couleur :</span>
 				<input type="file" name="nouvelleimage2" required> <br/>
 			</div>
-	        <input type="submit" value="Ajouter" />
+	        <input type="submit" class="btvvalid" value="Ajouter" />
 	    </form>
 	</body>
 </html>

@@ -39,7 +39,7 @@
                 <input type="file" name="nouvelleimage2" required> <br/>
             </div>
 
-        <input type="submit" value="Modifier" />
+        <input type="submit" class="btvvalid" value="Modifier" />
     </form>
 </body>
 </html> 
