@@ -4,9 +4,9 @@
 ?>
 <div class="img_hero">
     <div class="clarecherche">
-    <h1>Recherchez le légo de vos rève parmis notre liste :</h1>    
+    <h1>Recherchez le légo de vos rêves parmis notre liste :</h1>    
         <form class="scb" action="reponse_recherche.php" method="POST">
-            <input type="search" name="nom" id="real"  placeholder="ex: Cantina de Mos Eisley" list="boite" />
+            <input type="search" name="nom" id="real"  placeholder="recherche..." list="boite" />
                 <datalist id="boite">
                     <?php
                     // On va afficher ici la datalist
