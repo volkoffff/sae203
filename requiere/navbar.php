@@ -12,6 +12,7 @@
                             <div class="search-box">
                             <button class="btn-search">
                                 <i class="fas fa-search"></i></button>
+                                <form class="scb" action="reponse_recherche.php" method="POST">
                                 <input type="search" name="nom" class="input-search" list="boite" placeholder="Type to Search...">
                                 <datalist id="boite">
                                     <?php
@@ -23,6 +24,7 @@
                                     ?>
                                 </datalist>
                                 <input type="submit" value="chercher !" />
+</form>
                             </div>
                         </a></li>
 
