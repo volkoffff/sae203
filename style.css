@@ -850,7 +850,8 @@ form {
     border: solid 1px grey;
 }
 .btvvalid {
-    width: 7rem;
+    width: 60%;
+    height: 1.5rem;
     border: 2px solid var(--white);
     background-color: var(--white);
     color: white;
