@@ -23,7 +23,7 @@
 				<input type="number" name="pieces" min="0" required /><br />
 			</div>
 			<div class="ee">
-				<span>genre :</genre>	
+				<span>genre :</span>
 					<select name="genre" required /><br />
 						<option value="mixte">mixte</option>
 						<option value="homme">homme</option>
