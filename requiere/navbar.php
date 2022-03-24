@@ -12,20 +12,7 @@
                             <div class="search-box">
                             <button class="btn-search">
                                 <i class="fas fa-search"></i></button>
-                                <form class="scb" action="reponse_recherche.php" method="POST">
-                                <input type="search" name="nom" class="input-search" list="boite" placeholder="Type to Search...">
-                                <datalist id="boite">
-                                    <?php
-                                    // On va afficher ici la datalist
-                                    require 'lib_crud.inc.php';
-                                    $co=connexionBD();
-                                    genererDatalistAuteurs($co);
-                                    deconnexionBD($co);
-                                    ?>
-                                </datalist>
-                                <input type="submit" value="chercher !" />
-</form>
-                            </div>
+                                <input type="text" class="input-search" placeholder="Type to Search..."></div>
                         </a></li>
 
                   </ul>
