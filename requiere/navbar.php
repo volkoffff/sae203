@@ -22,6 +22,7 @@
                                     deconnexionBD($co);
                                     ?>
                                 </datalist>
+                                <input type="submit" value="chercher !" />
                             </div>
                         </a></li>
 
