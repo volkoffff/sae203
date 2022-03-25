@@ -16,6 +16,7 @@
         <a class="btn_see btn_see2" href="form_recherche.php">rechercher</a>
     </div>
 </div>
+<div class="arnaque"></div>
 <?php
     require 'requiere/footer.php';
     require 'requiere/fin.php';
