@@ -80,7 +80,7 @@
             echo '</div>';
             echo '</div>';
             echo '<div class="g5">';
-            echo '<p>catégorie:ㅤ<p>';
+            echo '<p>catégorie:<p>';
             echo '<p>'.$value['sg_genre']. '/</p>';
             echo '<p>'.$value['lg_genre']. '</p>'; 
             echo '</div>';
