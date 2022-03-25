@@ -8,7 +8,7 @@
             <h4 id="t1">let's find</4>
             <h1 id="t2">the right <span>lego set</span></h1>
             <h2 id="t3"> <span>for you</span></h2>
-            <p id="t4"> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p id="t4"> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</p>
         </div>
     </div>
      <div class="btn_div">
@@ -16,7 +16,6 @@
         <a class="btn_see btn_see2" href="form_recherche.php">rechercher</a>
     </div>
 </div>
-<div class="arnaque"></div>
 <?php
     require 'requiere/footer.php';
     require 'requiere/fin.php';
