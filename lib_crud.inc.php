@@ -155,7 +155,6 @@ echo '</table>'."\n";
     {
         $req = 'INSERT INTO table_lego(lg_nom,lg_prix, lg_pieces,lg_image,lg_genre,
          lg_age,_sg_id) VALUES ("'.$nom.'", '.$prix.' , '.$pieces.', "'.$nouvelleImage.'" , "'.$genre.'", '.$age.', '.$legosaga.')';
-        echo '<p>' . $req . '</p>' . "\n";
         try {
             $resultat = $mabd->query($req);
         } catch (PDOException $e) {
