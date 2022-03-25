@@ -12,7 +12,7 @@
                             <div class="search-box">
                             <button class="btn-search">
                                 <i class="fas fa-search"></i></button>
-                                <input type="text" class="input-search" placeholder="Type to Search..."></div>
+                                <input type="text" class="input-search" placeholder="ne marche pas"></div>
                         </a></li>
 
                   </ul>
