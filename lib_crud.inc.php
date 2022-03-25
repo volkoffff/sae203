@@ -489,7 +489,6 @@ echo '</table>'."\n";
                     sg_genre = '.$genre.',
                     sg_couleur = "'.$nouvelleImage2.'"
                 WHERE sg_id='.$id;
-        echo '<p>' . $req . '</p>' . "\n";
         try {
             $resultat = $co->query($req);
         } catch (PDOException $e) {
