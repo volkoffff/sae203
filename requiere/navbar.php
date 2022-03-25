@@ -8,7 +8,12 @@
                       <li class="nav-item"><a href="listing.php" class="nav-link">catalogue <span></span></a></li>
                       <li class="nav-item"><a href="form_recherche.php" class="nav-link">recherche <span></span></a></li>
                       <li class="nav-item"><a href="admin/admin.php" class="nav-link">privé <span></span></a></li>
-
+                      <li class="nav-item"><a href="#" class="nav-link">
+                            <div class="search-box">
+                            <button class="btn-search">
+                                <i class="fas fa-search"></i></button>
+                                <input type="text" class="input-search" placeholder="Type to Search..."></div>
+                        </a></li>
 
                   </ul>
                   </div>
