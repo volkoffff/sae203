@@ -12,8 +12,6 @@
 	        require '../lib_crud.inc.php';
 	
 	        $genre=$_POST['genre'];
-	        var_dump($_POST);
-	        var_dump($_FILES);
 	
 	        $imageType=$_FILES["nouvelleimage"]["type"];
 	        if ( ($imageType != "image/png") &&

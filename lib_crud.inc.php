@@ -184,7 +184,7 @@ echo '</table>'."\n";
             die();
         }
         if ($resultat->rowCount()==1) {
-            echo '<p>La bande dessinée '.$id.' a été supprimée du catalogue.</p>'."\n";
+            echo '<p>La boite de lego '.$id.' a été supprimée du catalogue.</p>'."\n";
         } else {
             echo '<p>Erreur lors de la suppression.</p>'."\n";
             die();
@@ -382,7 +382,6 @@ echo '</table>'."\n";
  {
      $req = 'INSERT INTO table_saga(sg_nom , sg_genre , sg_couleur) 
      VALUES ( "'.$nouvelleImage.'" ,"'.$genre.'","'.$nouvelleImage2.'")';
-     echo '<p>' . $req . '</p>' . "\n";
      try {
          $resultat = $mabd->query($req);
      } catch (PDOException $e) {
@@ -391,7 +390,7 @@ echo '</table>'."\n";
          die();
      }
      if ($resultat->rowCount() == 1) {
-         echo '<p>La boite saga a été ajoutée au catalogue.</p>' . "\n";
+         echo '<p>La saga a été ajoutée au catalogue.</p>' . "\n";
      } else {
          echo '<p>Erreur lors de l\'ajout.</p>' . "\n";
          die();
@@ -401,7 +400,6 @@ echo '</table>'."\n";
      // fonction d'effacement d'une BD
      function effacerBD2($mabd, $id) {
         $req = 'DELETE FROM table_saga where sg_id='.$id;
-        echo '<p>'.$req.'</p>'."\n";
         try{
             $resultat = $mabd->query($req);
         } catch (PDOException $e) {
